@@ -1,0 +1,4 @@
+---
+title: Plotting with Matplotlib
+---
+
