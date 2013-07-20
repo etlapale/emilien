@@ -4,19 +4,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Émilien Tlapale - $title$</title>
+        <title>$author$ - $title$</title>
         <link rel="stylesheet" type="text/css" href="/css/emiliano.css" />
+	<script type="text/javascript" src="//use.typekit.net/cro1xkp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
-    <body>
+    <body class="tk-calluna">
         <div id="header">
             <div id="logo">
-                <a href="/index.html">Émilien Tlapale</a>
+                <a href="$home$">$author$</a>
             </div>
-            <div id="navigation">
-                <a href="/index.html">Home</a>
-                <a href="/research.html">Research</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/archive.html">Archive</a>
+            <div id="navigation" class="tk-calluna-sans">
+              $for(navigitems)$
+                <a href="/$url$">$title$</a>
+              $endfor$
             </div>
         </div>
 

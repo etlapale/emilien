@@ -13,7 +13,7 @@ I designed models of visual motion processing in the primate brain.
 There I completed a PhD thesis under the supervision of
 [Pierre Kornprobst](http://www-sop.inria.fr/members/Pierre.Kornprobst) (INRIA)
 and
-[Guillaume Masson](http://www.int.univ-amu.fr/MASSON-Guillaume) (INT).
+[Guillaume Masson](http://www.int.univ-amu.fr/MASSON-Guillaume) (CNRS).
 
 Between 2007 and 2010 I taught C++ classes to fifth year electronic students
 (CSS) at

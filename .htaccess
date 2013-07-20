@@ -1,0 +1,2 @@
+ErrorDocument 404 /notfound.html
+Redirect Permanent /vss13 http://emiliano.atelo.org/posts/vss-2013
