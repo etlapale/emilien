@@ -1,23 +1,13 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+
 import Data.Monoid (mappend)
 import Hakyll
 import System.IO.Unsafe
 
 
---------------------------------------------------------------------------------
 main :: IO ()
 main = hakyllWith conf $ do
-    
-    match "images/*" $ do
-        route   idRoute
-        compile copyFileCompiler
-
-    match "data/*" $ do
-        route   idRoute
-        compile copyFileCompiler
-        
-    match "data/*/*" $ do
+    match ("images/*" .||. "data/**") $ do
         route   idRoute
         compile copyFileCompiler
         
@@ -29,13 +19,7 @@ main = hakyllWith conf $ do
         route   $ setExtension "css"
         compile $ getResourceString >>= withItemBody (unixFilter "runghc" [])
 
-    match "*xico*.md" $ do
-        route   $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" xicoCtx
-            >>= relativizeUrls
-
-    match "projects.md" $ do
+    match ("*xico*.md" .||. "projects.md" .||. "projects/*.md")$ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" xicoCtx
@@ -52,12 +36,6 @@ main = hakyllWith conf $ do
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
-            >>= relativizeUrls
-
-    match "projects/*.md" $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" xicoCtx
             >>= relativizeUrls
 
     create ["archive.html"] $ do
