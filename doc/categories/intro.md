@@ -14,7 +14,7 @@ $$f : a \to b    \qquad\mathrm{ou}\qquad     a \xrightarrow{f} b.$$
 
 Si le codomaine d’un morphisme $f$ correspond au domaine d’un morphisme $g$,
 alors leur composé $g \circ f$ existe dans la catégorie. De plus la
-composition est associative, si le domaine d’un morphisme $f$ correspond au
+composition est associative, si le domaine d’un morphisme $h$ correspond au
 codomaine de $g$, on a $h \circ (g \circ f) = (h \circ g) \circ f$.
 
 À chaque objet $b$ est associé un morphisme identité $1_b : b \to b$ tel que,
