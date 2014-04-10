@@ -40,7 +40,7 @@ Some clues in case it does not work:
 ## News
 `2013-07-19`      InkSyntax 0.1.2 was updated to work with later highlight
 versions. InkSyntax is now licensed under the
-[simplified BSD license](../data/inksyntax/COPYING), and hosted on
+[simplified BSD license](../data/licenses/BSD), and hosted on
 a [new website](http://xico.atelo.org/projects/inksyntax.html).
 
 `2009-09-29`      InkSyntax 0.1.1 adds re-editability and line numbering.

@@ -1,9 +1,10 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+import Data.Map (member)
 import Data.Monoid (mappend)
 import Hakyll
 import System.IO.Unsafe
-
+import Text.Pandoc.Options
 
 main :: IO ()
 main = hakyllWith conf $ do
@@ -28,6 +29,12 @@ main = hakyllWith conf $ do
     match "*.md" $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" emilCtx
+            >>= relativizeUrls
+
+    match "doc/*/*.md" $ do
+        route   $ setExtension "html"
+        compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
             >>= loadAndApplyTemplate "templates/default.html" emilCtx
             >>= relativizeUrls
 
@@ -109,3 +116,8 @@ postList sortFilter = do
     itemTpl <- loadBody "templates/post-item.html"
     list    <- applyTemplateList itemTpl postCtx posts
     return list
+
+pandocOptions :: WriterOptions
+pandocOptions = defaultHakyllWriterOptions
+  { writerHTMLMathMethod = MathJax "" }
+

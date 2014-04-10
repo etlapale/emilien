@@ -75,6 +75,7 @@ emiliano = do
             fontWeight (weight 600)
             color butter3
     p ? margin (pt 4) (pt 4) (pt 8) (pt 4)
+    pre ? margin (pt 4) (pt 4) (pt 8) (pt 4)
     a ? textDecoration none
     a # href ? color chocolate3
     a # href # hover ? textDecoration underline
