@@ -1,6 +1,6 @@
-.PHONY: build rebuild
+.PHONY: build rebuild sync
 
-all: rebuild
+all: build
 
 build: site
 	./site build
