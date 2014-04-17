@@ -35,11 +35,13 @@ aluminium6 = "#2e3436"
 
 emiliano :: Css
 emiliano = do
+    fontFace $ do fontFamily ["Fira Sans Regular"] []
+                  fontFaceSrc [FontFaceSrcUrl "../fonts/FiraSansOT-Regular.otf" (Just OpenType)]
     body ? do background  aluminium1
               color       aluminium6
-              fontFamily  ["Calluna"] [serif]
+              fontFamily  ["Fira Sans Regular"] [sansSerif]
               fontSize    (pt 13)
-              fontWeight  (weight 300)
+              -- fontWeight  (weight 300)
               marginLeft  auto
               marginRight auto
               width       (pt 500)

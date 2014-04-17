@@ -10,6 +10,7 @@ main :: IO ()
 main = hakyllWith defaultConfiguration $ do
   -- Static files
   match ("images/*"
+    .||. "fonts/**"
     .||. "data/**"
     .||. "js/**"
     .||. ".htaccess") $ do
