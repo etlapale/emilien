@@ -9,7 +9,7 @@ rebuild: site
 	./site rebuild
 
 site: site.hs
-	ghc $<
+	ghc $(.ALLSRC)
 
 sync:
 	chmod +x _site/*.html _site/*/*.html
