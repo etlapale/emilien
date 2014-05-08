@@ -7,7 +7,7 @@ import System.IO.Unsafe
 import Text.Pandoc.Options
 
 main :: IO ()
-main = hakyllWith defaultConfiguration $ do
+main = hakyllWith myconf $ do
   -- Static files
   match ("images/*"
     .||. "fonts/**"
@@ -79,12 +79,10 @@ main = hakyllWith defaultConfiguration $ do
   -- Templates
   match "templates/*" $ compile templateCompiler
 
-{-
-where
-  myIgnoreFile ".htaccess" = False
-  myIgnoreFile path        = ignoreFile defaultConfiguration path
-  conf = defaultConfiguration { ignoreFile = myIgnoreFile }
--}
+myconf :: Configuration
+myconf = defaultConfiguration { ignoreFile = myIgnoreFile }
+  where myIgnoreFile ".htaccess" = False
+        myIgnoreFile path        = ignoreFile defaultConfiguration path
 
 postCtx :: Context String
 postCtx =
