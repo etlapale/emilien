@@ -1,4 +1,4 @@
-.PHONY: build rebuild sync
+.PHONY: build rebuild publish
 
 all: build
 
@@ -11,6 +11,6 @@ rebuild: site
 site: site.hs
 	ghc $(.ALLSRC)
 
-sync:
+publish:
 	chmod +x _site/*.html _site/*/*.html
 	rsync -avz _site/ ovo:web
