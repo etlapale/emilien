@@ -126,4 +126,4 @@ postList sortFilter = do
 
 pandocOptions :: WriterOptions
 pandocOptions = defaultHakyllWriterOptions
-  { writerHTMLMathMethod = MathJax "" }
+-- { writerHTMLMathMethod = MathJax "" }

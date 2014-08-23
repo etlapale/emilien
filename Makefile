@@ -9,7 +9,7 @@ rebuild: site
 	./site rebuild
 
 site: site.hs
-	ghc $(.ALLSRC)
+	ghc $<
 
 publish:
 	chmod +x _site/*.html _site/*/*.html

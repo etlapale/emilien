@@ -1,4 +1,0 @@
-ErrorDocument 404 /notfound.html
-RewriteEngine On
-RewriteRule ^vss13$ /posts/vss-2013.html [L]
-RewriteRule ^vss14$ /posts/vss-2014.html [L]
