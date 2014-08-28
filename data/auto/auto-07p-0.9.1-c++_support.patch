@@ -1,0 +1,121 @@
+diff -urB auto.orig/07p/include/auto_f2c.h auto/07p/include/auto_f2c.h
+--- auto.orig/07p/include/auto_f2c.h	2007-10-01 05:56:42.000000000 -0700
++++ auto/07p/include/auto_f2c.h	2014-08-27 14:26:09.700464136 -0700
+@@ -89,12 +89,12 @@
+ 
+ #ifndef WRAPPER
+ /* user functions */
+-static int func();
+-static int stpnt();
+-static int bcnd();
+-static int icnd();
+-static int fopt();
+-static int pvls();
++static user_func_t func;
++static user_stpnt_t stpnt;
++static user_bcnd_t bcnd;
++static user_icnd_t icnd;
++static user_fopt_t fopt;
++static user_pvls_t pvls;
+ const user_function_list user = { func, stpnt, bcnd, icnd, fopt, pvls };
+ #endif
+ 
+diff -urB auto.orig/07p/python/AUTOCommands.py auto/07p/python/AUTOCommands.py
+--- auto.orig/07p/python/AUTOCommands.py	2011-11-16 09:26:53.000000000 -0800
++++ auto/07p/python/AUTOCommands.py	2014-08-27 14:26:27.197130097 -0700
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python 
++#! /usr/bin/env python2 
+ try:
+     from cStringIO import StringIO
+     import __builtin__
+@@ -1304,7 +1304,7 @@
+             kw["equation"] = applyTemplate(data,"equation",templates)
+         if "e" in kw:
+             eq = kw["e"]
+-            for ext in [".f90",".f",".c"]:
++            for ext in [".f90",".f",".c",".cc"]:
+                 if os.path.exists(eq+ext):
+                     return kw, exception
+             raise AUTOExceptions.AUTORuntimeError(
+diff -urB auto.orig/07p/python/runAUTO.py auto/07p/python/runAUTO.py
+--- auto.orig/07p/python/runAUTO.py	2012-01-26 12:33:13.000000000 -0800
++++ auto/07p/python/runAUTO.py	2014-08-27 14:26:41.247129528 -0700
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python
++#! /usr/bin/env python2
+ import getopt,sys,os
+ import signal
+ try:
+@@ -74,6 +74,7 @@
+         self.options["solution"] = parseS.AUTOSolution()
+         self.options["homcont"] = None
+         self.options["selected_solution"] = None
++        self.options["make_vars"] = None
+ 
+         kw = self.config(**kw)
+ 
+@@ -261,7 +262,10 @@
+         # first get the configure-set variables
+         auto_dir = self.options["auto_dir"]
+         f = open(os.path.join(auto_dir,"cmds","cmds.make"),"r")
+-        var = {}
++	# Defaults
++        var = {"CXX":      "c++",
++               "CXXFLAGS": "",
++               "LDFLAGS":  ""}
+         for line in f:
+             line = line.split()
+             if len(line) < 2 or line[1] != '=':
+@@ -277,13 +281,20 @@
+                         v = v.replace("$(AUTO_DIR)",auto_dir)
+                     var[key] = v
+         f.close()
++
++	# Allow user defined make variables
++	mv = self.options["make_vars"]
++	if mv is not None:
++	    for key in mv:
++	        var[key] = mv[key]
++
+         return var
+ 
+     def __make(self,equation,fcon=False):
+         var = self.__getmakevars()
+         # figure out equation file name
+         src = ""
+-        for ext in [".f90",".f",".c"]:
++        for ext in [".f90",".f",".c",".cc"]:
+             if os.path.exists(equation+ext):
+                 src = equation+ext
+         if src == "":
+@@ -293,9 +304,12 @@
+         # compile
+         if not os.path.exists(equation+'.o') or self.__newer([src],
+                                                              equation+'.o'):
+-            if src[-1] == 'c':
++            if src.endswith('.c'):
+                 cmd = "%s %s %s -c %s -o %s.o"%(var["CC"],var["CFLAGS"],
+                                                 var["OPT"],src,equation)
++            elif src.endswith('.cc'):
++                cmd = "%s %s %s %s -c %s -o %s.o"%(var["CXX"],var["CFLAGS"],var["CXXFLAGS"],
++                                                var["OPT"],src,equation)
+             else:
+                 cmd = "%s %s %s -c %s -o %s.o"%(var["FC"],var["FFLAGS"],
+                                                 var["OPT"],src,equation)
+@@ -316,9 +330,12 @@
+             deps = glob.glob(libs) + [equation+'.o']
+             execfile = equation + ".exe"
+         if not os.path.exists(execfile) or self.__newer(deps,execfile):
+-            if src[-1] == 'c':
+-                cmd = "%s -L%s %s %s %s.o -o %s %s -lauto_c"%(var["FC"],libdir,
+-                                   var["FFLAGS"],var["OPT"],equation,execfile,libs)
++            if src.endswith('.c'):
++                cmd = "%s -L%s %s %s %s.o -o %s %s -lauto_c %s"%(var["FC"],libdir,
++                                   var["FFLAGS"],var["OPT"],equation,execfile,libs,var["LDFLAGS"])
++            elif src.endswith('.cc'):
++                cmd = "%s -L%s %s %s %s.o -o %s %s -lauto_c %s"%(var["FC"],libdir,
++                                   var["FFLAGS"],var["OPT"],equation,execfile,libs,var["LDFLAGS"])
+             else:
+                 cmd = "%s %s %s %s.o -o %s %s"%(var["FC"],var["FFLAGS"],var["OPT"],
+                                                     equation,execfile,libs)

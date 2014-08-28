@@ -1,4 +1,4 @@
-.PHONY: build rebuild publish
+.PHONY: build rebuild publish sync
 
 all: build
 
@@ -10,6 +10,8 @@ rebuild: site
 
 site: site.hs
 	ghc $<
+
+sync: publish
 
 publish:
 	chmod +x _site/*.html _site/*/*.html

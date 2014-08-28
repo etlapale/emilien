@@ -32,6 +32,10 @@ aluminium5 = "#555753"
 aluminium6 :: Color
 aluminium6 = "#2e3436"
 
+darkBrown   = "#725a29"
+darkRed     = "#8a4a4a"
+lightRed    = "#fbd4d4"
+darkReddish = "#722929"
 
 emiliano :: Css
 emiliano = do
@@ -66,24 +70,35 @@ emiliano = do
                            a # href ? color aluminium3
         div # "#navigation" ? do textAlign (alignSide sideRight)
                                  fontVariant smallCaps
+                                 a # href ? borderBottom dotted (pt 0) lightRed
     div # "#footer" ? do fontSize  (pt 10)
                          color     aluminium4
                          textAlign (alignSide sideRight)
                          a # href ? color aluminium4
     h1 ? do fontSize   (pt 13)
-            fontWeight (weight 600)
-            color      orange3
-    h2 ? do fontSize (pt 11)
-            fontWeight (weight 600)
-            color butter3
+            -- fontWeight (weight 600)
+            color      darkBrown
+    h1 # firstChild ? do color    "#585143"
+                         fontSize (pt 15)
+    h2 ? do fontSize     (pt 11)
+            fontWeight   (weight 600)
+            color        "#a0957d"
+            marginLeft   (pt 4)
+            marginTop    (em 1)
+            marginBottom (em 0.4)
     p ? margin (pt 4) (pt 4) (pt 8) (pt 4)
-    pre ? margin (pt 4) (pt 4) (pt 8) (pt 4)
+    pre ? do margin      (pt 4) (pt 4) (pt 8) (pt 4)
+             borderLeft  solid (em 0.5) "#e9e2d3"
+             paddingLeft (em 1)
     a ? textDecoration none
-    a # href ? color chocolate3
-    a # href # hover ? textDecoration underline
-    code ? do fontFamily  ["calluna-sans", "Calluna Sans"] [sansSerif]
+    a # href ? do color          darkRed
+                  textDecoration none
+                  borderBottom   dotted (px 1) lightRed
+    a # href # hover ? do backgroundColor lightRed
+                          color           darkReddish
+                  
+    code ? do fontFamily  ["Fira Mono"] [sansSerif]
               fontSize    (pt 13)
-              fontWeight  (weight 300)
     ul ? do "list-style" -: "none"
             paddingLeft  (pt 0)
             marginTop    (pt 5)
