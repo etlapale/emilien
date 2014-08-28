@@ -67,7 +67,8 @@ emiliano = do
         div # "#logo" ? do float      floatLeft
                            fontSize   (pt 20)
                            fontWeight (weight 400)
-                           a # href ? color aluminium3
+                           a # href ? do color aluminium3
+                                         borderBottom dotted (pt 0) lightRed
         div # "#navigation" ? do textAlign (alignSide sideRight)
                                  fontVariant smallCaps
                                  a # href ? borderBottom dotted (pt 0) lightRed
