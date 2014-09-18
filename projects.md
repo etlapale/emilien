@@ -2,6 +2,7 @@
 title: Code
 ---
 
+- [bibgen](projects/bibgen.html) A bibliography generator for DocBook
 - [cuiloa](data/cuiloa/html/) A C++ multidimensional array library
 - [InkSyntax](projects/inksyntax.html) A source code syntax highlighter plugin
   for Inkscape

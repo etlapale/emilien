@@ -97,7 +97,8 @@ emilCtx =
   defaultContext
   where items = [("Home", "index.html"),
                  ("Research", "research.html"),
-                 ("Contact", "contact.html")]
+                 ("Code",     "code.html"),
+                 ("Contact",  "contact.html")]
 
 xicoCtx :: Context String
 xicoCtx =

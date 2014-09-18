@@ -5,3 +5,4 @@ site
 *.o
 doc/*/*.html
 *.swp
+*~
