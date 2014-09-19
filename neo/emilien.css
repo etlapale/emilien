@@ -1,4 +1,4 @@
-/* http://paletton.com/#uid=c3v0B062m0k18O17rzm4NFO2nx-35tf */
+/* http://paletton.com/#uid=c3v0B062m0kaVz84jP27qHbeJtFiHpX */
 
 @font-face
 {
@@ -25,11 +25,12 @@ div#content
   background-position : bottom right;
   padding-left        : 8pt;
   padding-right       : 8pt;
-  padding-top         : 2pt;
-  padding-bottom      : 1pt;
+  padding-top         : 1ex;
+  padding-bottom      : 1ex;
   margin-top          : 8pt;
   margin-bottom       : 8pt;
   border-radius       : 4pt 4pt 4pt 4pt;
+  position: relative;
 }
 
 .welcome {
@@ -41,13 +42,14 @@ div#content
   font-size: 220%;
   font-weight: 900;
   float: left;
-  margin-top: .5ex;
+  margin-top: 0ex;
   margin-left: 0.25em;
 }
 
 .welcome img
 {
   margin-top: 3.5ex;
+  width: 9.3em;
 }
 
 #intro {
@@ -104,6 +106,88 @@ div#content
   color: #879095;
   background-color: none;
 }
+
+#main-pages h2
+{
+  /*color: #8da264;*/
+  color: #7b9f35;
+  font-size: 150%;
+  font-weight: bold;
+  margin-top: 0.5ex;
+  margin-bottom: 0.1ex;
+}
+
+#main-pages #research
+{
+  float: left;
+  width: 33%;
+}
+
+#main-pages #life
+{
+  float: right;
+  width: 33%;
+}
+
+#main-pages #code
+{
+  display: inline-block;
+  width: 33%;
+}
+
+#main-pages .topic
+{
+  position: relative;
+  border-radius: 1em;
+}
+
+#main-pages .topic:hover
+{
+  background-color: #fff3e6;
+}
+
+#main-pages .topic:hover h2
+{
+  color: #e98b25;
+}
+
+#main-pages .topic-spanner
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#contact
+{
+  color: #cf6656;
+  background-color: #ffe9e6;
+  /*border-radius: .25em;*/
+  padding-left: .1em;
+  padding-right: .1em;
+  padding-top: .1ex;
+  padding-top: .1ex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 90%;
+  z-index: 2;
+  display: block;
+  /*transform: rotate(-45deg);*/
+}
+
+#contact:hover
+{
+  color: #ffa94c;
+  background-color: #fff3e6;
+}
+
+
+/* Old style */
 
 div#header
 {
