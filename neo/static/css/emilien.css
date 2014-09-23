@@ -262,21 +262,46 @@ span.at:before
   z-index: 2;
 }
 
-#misc a[href]:hover
+a[href]:hover
 {
-  color: #d35a47;
 }
 
 /* Other pages */
 
 h1
 {
-  font-size: 220%;
-  font-weight: 900;
+  font-size: 175%;
+  font-weight: bold;
   float: left;
   margin-top: 0;
   margin-left: 0;
   float: none;
+  color: #b24f3f;
+}
+
+h2
+{
+  font-size: 125%;
+  font-weight: bold;
+  color: #8a6b4a;
+}
+
+p, .line-block
+{
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+
+a[href]
+{
+  color: #8a6b4a;
+}
+
+a[href]:hover
+{
+  background-color: #ffe1c0;
+  border-radius: .2em;
+  color: #d35a47;
 }
 
 
