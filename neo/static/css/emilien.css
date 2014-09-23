@@ -262,8 +262,9 @@ span.at:before
   z-index: 2;
 }
 
-a[href]:hover
+#misc a[href]:hover
 {
+  color: #d45a47;
 }
 
 /* Other pages */
@@ -306,54 +307,6 @@ a[href]:hover
 
 
 /* Old style */
-
-div#header
-{
-  margin-bottom : 0pt;
-  color         : rgb(136,138,133);
-}
-
-div#header a[href]
-{
-  color : rgb(136,138,133);
-}
-
-div#header div#logo
-{
-  float       : left;
-  font-size   : 20pt;
-  font-weight : 400;
-}
-
-div#header div#logo a[href]
-{
-  color         : rgb(186,189,182);
-  border-bottom : dotted 0pt rgb(251,212,212);
-}
-
-div#header div#navigation
-{
-  text-align   : right;
-  font-variant : small-caps;
-}
-
-div#header div#navigation a[href]
-{
-  border-bottom : dotted 0pt rgb(251,212,212);
-}
-
-div#footer
-{
-  font-size  : 10pt;
-  color      : rgb(136,138,133);
-  text-align : right;
-}
-
-div#footer a[href]
-{
-  color : rgb(136,138,133);
-}
-
 
 pre
 {
@@ -412,18 +365,8 @@ p.caption
   font-size  : 10pt;
 }
 
-.more
-{
-  text-align : right;
-  font-size  : 11pt;
-  margin-top : -4pt;
-}
-
 blockquote
 {
   font-style : italic;
   text-align : right;
 }
-
-
-/* Generated with Clay, http://fvisser.nl/clay */
