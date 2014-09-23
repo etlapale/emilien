@@ -1,6 +1,6 @@
-SRV=ovo:web/neo
+SRV=ovo:web
 
 .PHONY: publish
 
 publish:
-	rsync -avz --exclude=*.pdf build/html/ build/parts static/ $(SRV)
+	rsync -avz build/html/ build/parts static/ $(SRV)

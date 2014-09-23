@@ -14,7 +14,11 @@ $(document).ready(function() {
 		$("#content").removeClass("welcome");
 	    // Load the new page content
 	    $("article").load("/parts"+page+".html", function() {
+		// Show content
 		$("article").fadeIn();
+		// Update webpage title
+		$(document).prop('title',
+				 $("article h1").text() + " - Émilien Tlapale");
 	    });
 	    // Save in the history
 	    if (saveHistory)
