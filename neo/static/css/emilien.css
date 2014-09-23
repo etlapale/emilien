@@ -316,14 +316,40 @@ footer a[href]
   color: #d3cdc6;
 }
 
-/* Old style */
+/* Syntax highlighting */
+
+.code .tag {
+  color: #a08f7d;
+}
+
+.code .attribute {
+  color: #ce9d68;
+}
+
+.code .entity {
+  color: #ce7668;
+}
+
+.code .string {
+  color: #7c94a4;
+}
+
 
 pre
 {
   margin       : 4pt 4pt 8pt 4pt;
   border-left  : solid 0.5em rgb(233,226,211);
   padding-left : 1em;
+
+  font-family  : "Fira Mono", monospace;
 }
+
+tt
+{
+  font-family  : "Fira Mono", monospace;
+}
+
+/* Old style */
 
 a
 {

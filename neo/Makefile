@@ -2,7 +2,7 @@ SRV=ovo:web/neo
 
 .PHONY: publish publish_fragments publish_static
 
-publish: publish_html publish_fragments publish_static
+publish: publish_static publish_html publish_fragments
 
 publish_html:
 	rsync -avz build/html/ $(SRV)
