@@ -334,6 +334,21 @@ footer a[href]
   color: #7c94a4;
 }
 
+.code .keyword {
+  color: #82a63b;
+}
+
+.code .punctuation {
+  color: #7f8487;
+}
+
+.code .function {
+  color: #8a6b4a;
+}
+
+.code .operator {
+  color: #af9793;
+}
 
 pre
 {
