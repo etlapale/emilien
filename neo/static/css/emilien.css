@@ -305,6 +305,16 @@ a[href]:hover
   color: #d35a47;
 }
 
+footer
+{
+  color: #d3cdc6;
+  font-size: 75%;
+}
+
+footer a[href]
+{
+  color: #d3cdc6;
+}
 
 /* Old style */
 
