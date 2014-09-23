@@ -6,3 +6,6 @@ site
 doc/*/*.html
 *.swp
 *~
+_cache
+build
+__pycache__

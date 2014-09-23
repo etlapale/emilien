@@ -115,6 +115,13 @@ div#content
   font-weight: bold;
   margin-top: 0.5ex;
   margin-bottom: 0.1ex;
+  margin-left: 0;
+}
+
+#main-pages h2 span.fa
+{
+  text-align: right;
+  color: #c4d0ab;
 }
 
 #main-pages #research
@@ -123,7 +130,7 @@ div#content
   width: 33%;
 }
 
-#main-pages #life
+#main-pages #misc
 {
   float: right;
   width: 33%;
@@ -149,6 +156,11 @@ div#content
 #main-pages .topic:hover h2
 {
   color: #e98b25;
+}
+
+#main-pages .topic:hover h2 span.fa
+{
+  color: #d39047;
 }
 
 #main-pages .topic-spanner
@@ -184,6 +196,87 @@ div#content
 {
   color: #ffa94c;
   background-color: #fff3e6;
+}
+
+#navbar
+{
+  color: #cf6656;
+  /*background-color: #ffe9e6;*/
+  /*border-radius: .25em;*/
+  padding-left: .1em;
+  padding-right: .1em;
+  padding-top: .1ex;
+  padding-top: .1ex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 90%;
+  z-index: 2;
+  display: block;
+  margin: 0;
+  font-size: 125%;
+  list-style: none;
+}
+
+#navbar li
+{
+  display: inline;
+  margin-left: .2em;
+  margin-right: .2em;
+}
+
+#navbar a[href]
+{
+  color: #c4d0ab;
+  text-decoration: none;
+}
+
+#navbar a[href]:hover
+{
+  color: #d35a47;
+  text-decoration: none;
+}
+
+span.at:before
+{
+  content: "@";
+}
+
+.welcome p
+{
+  margin: 0;
+}
+
+#misc ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#misc a[href]
+{
+  color: #8b765f;
+  position: relative;
+  z-index: 2;
+}
+
+#misc a[href]:hover
+{
+  color: #d35a47;
+}
+
+/* Other pages */
+
+h1
+{
+  font-size: 220%;
+  font-weight: 900;
+  float: left;
+  margin-top: 0;
+  margin-left: 0;
+  float: none;
 }
 
 
@@ -236,26 +329,6 @@ div#footer a[href]
   color : rgb(136,138,133);
 }
 
-h1
-{
-  font-size : 13pt;
-  color     : rgb(114,90,41);
-}
-
-h2
-{
-  font-size     : 11pt;
-  font-weight   : 600;
-  color         : rgb(160,149,125);
-  margin-left   : 4pt;
-  margin-top    : 1em;
-  margin-bottom : 0.4em;
-}
-
-p
-{
-  margin : 4pt 4pt 8pt 4pt;
-}
 
 pre
 {
@@ -269,32 +342,10 @@ a
   text-decoration : none;
 }
 
-/*
-a[href]
-{
-  color           : rgb(138,74,74);
-  text-decoration : none;
-  border-bottom   : dotted 1px rgb(251,212,212);
-}
-
-a[href]:hover
-{
-  background-color : rgb(251,212,212);
-  color            : rgb(114,41,41);
-}*/
-
 code
 {
   font-family : "Fira Mono", sans-serif;
   font-size   : 13pt;
-}
-
-ul
-{
-  list-style    : none;
-  padding-left  : 0pt;
-  margin-top    : 5pt;
-  margin-bottom : 5pt;
 }
 
 
