@@ -1,7 +1,6 @@
----
-title: VSS 2013 – Modeling perceptual learning of visual motion
-date: 2013-05-11
----
+VSS 2013
+========
+:Date: 2013-05-11
 
-You can [download a copy](../data/2013-vss-tlapale.pdf) of the poster
-presented at [VSS](http://www.visionsciences.org/) 2013.
+You can `download a copy </data/posters/2013-vss-tlapale.pdf>`_ of the poster
+presented at `VSS <http://www.visionsciences.org/>`_ 2013.

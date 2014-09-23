@@ -26,11 +26,11 @@ article id 781561, 22 pages.
 Modelling the dynamics of contextual motion integration in the primate
 (2011).
 É. Tlapale. PhD at the Université Nice Sophia Antipolis.
-`PhD Thesis </data/thesis.pdf>`__
+`PhD Thesis </data/publications/thesis.pdf>`__
 
 A dynamical neural model of motion integration (2010).
 É. Tlapale, G.S. Masson, P. Kornprobst. VSS.
-`Poster </data/2010-vss-model.pdf>`__
+`Poster </data/posters/2010-vss-model.pdf>`__
 
 Modelling the dynamics of motion integration with a new luminance
 gated diffusion mechanism (2010).
@@ -39,12 +39,12 @@ gated diffusion mechanism (2010).
 
 Motion integration modulated by form information (2008).
 É. Tlapale, G.S. Masson, P. Kornprobst. Neurocomp.
-`Poster </data/2008-neurocomp-poster.pdf>`__
-`Proceedings </data/2008-neurocomp-tlapale.pdf>`__
+`Poster </data/posters/2008-neurocomp-poster.pdf>`__
+`Proceedings </data/publications/2008-neurocomp-tlapale.pdf>`__
 
 Model of motion field diffusion controlled by form cues (2007).
 É. Tlapale, G.S. Masson, T. Viéville, P. Kornprobst. ECVP.
-`Poster </data/2007-ecvp-tlapale.pdf>`__
+`Poster </data/posters/2007-ecvp-tlapale.pdf>`__
 
 Biological model of motion integration and segmentation based of form cues
 (2007).
@@ -75,7 +75,7 @@ models (2010).
 	
 A bio-inspired evaluation methodology for motion estimation (2010).
 P. Kornprobst, É. Tlapale, J.D. Bouecke, H. Neumann, G.S. Masson. VSS.
-`Poster </data/2010-vss-bench.pdf>`__
+`Poster </data/posters/2010-vss-bench.pdf>`__
 
 
 Low vision
@@ -85,7 +85,7 @@ Navisio: Towards an integrated reading aid system for low vision
 patients (2008).
 J.-B. Bernard, É. Tlapale, G. Faure, É. Castet, P. Kornprobst.
 CVAVI.
-`Proceedings <data/2008-cvavi-navisio.pdf>`__
+`Proceedings </data/publications/2008-cvavi-navisio.pdf>`__
 
 Solairepdf, un logiciel d'aide à la lecture de documents PDF pour les
 patients basse vision (2008).

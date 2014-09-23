@@ -9,3 +9,4 @@ doc/*/*.html
 _cache
 build
 __pycache__
+\#*\#

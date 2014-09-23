@@ -2,7 +2,7 @@ Contact
 =======
 
 | Émilien Tlapale <emilien@tlapale.com>
-| Public key: `7876091B </data/et.pk>`_
+| Public key: `7876091B </data/ego/et.pk>`_
 
 | 3151 Social Science Plaza A  
 | University of California, Irvine  
