@@ -20,7 +20,7 @@ body
 div#content
 {
   background-color    : rgb(255,255,255);
-  background-image    : url("/images/woio.png");
+  /*background-image    : url("/images/woio.png");*/
   background-repeat   : no-repeat;
   background-position : bottom right;
   padding-left        : 8pt;

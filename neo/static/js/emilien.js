@@ -1,24 +1,38 @@
+var locations = ["/code",
+		 "/contact",
+		 "/research",
+		 "/welcome"];
+
 $(document).ready(function() {
-    console.log("Document ready!");
 
-    $("#research .topic-spanner").click(function() {
-	console.log("topic-spanner of #research clicked!");
+    var switchTo = function(page, saveHistory) {
+	$("article").fadeOut("fast", function() {
+	    // Update the welcome class
+	    if (page == "/welcome")
+		$("#content").addClass("welcome");
+	    else
+		$("#content").removeClass("welcome");
+	    // Load the new page content
+	    $("article").load("/parts"+page+".html", function() {
+		$("article").fadeIn();
+	    });
+	    // Save in the history
+	    if (saveHistory)
+		history.pushState(null, null, page);
+	});
+    };
 
-	// Remove previous content
-	$("#content").removeClass("welcome");
-	$("img").remove();
-	$("#intro").remove();
-	$(".spacer").remove();
-	$("#main-pages").remove();
-	$("#contact").remove();
+    $(window).bind("popstate", function(event) {
+	var loc = document.location.pathname;
+	if ($.inArray(loc, locations) >= 0)
+	    switchTo(loc, false);
+    });
 
-	// Show new content
-	$("h1").text("Research");
-	$("#content").append("<p>Hello world, this is a very long test to show how it will fit in the new design.</p>");
-
-	// Show the navigation bar
-	$("#navbar").css("display", "block");
-
-	return false;
+    // Create AJAX links 
+    $.each(locations, function(index,value) {
+	$("a[href='"+value+"']").click(function() {
+	    switchTo(value, true);
+	    return false;
+	});
     });
 });
