@@ -280,6 +280,13 @@ h1
   color: #b24f3f;
 }
 
+.article-meta
+{
+  margin-top: -3.5ex;
+  color: #9ca3a8;
+  font-size: 80%;
+}
+
 h2
 {
   font-size: 125%;
@@ -307,14 +314,15 @@ a[href]:hover
 
 footer
 {
-  color: #d3cdc6;
+  color: #9ca3a8;
   font-size: 75%;
 }
 
 footer a[href]
 {
-  color: #d3cdc6;
+  color: #9ca3a8;
 }
+
 
 /* Syntax highlighting */
 
