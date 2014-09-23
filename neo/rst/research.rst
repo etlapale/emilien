@@ -21,7 +21,7 @@ from biology to artificial image processing systems (2011).
 J.D. Bouecke, É. Tlapale, P. Kornprobst, H. Neumann.
 Eurasip Journal on Advances in Signal Processing, vol. 2011,
 article id 781561, 22 pages.
-`Article <http://www.hindawi.com/journals/asp/aip.781561.html>`__
+`Article <http://asp.eurasipjournals.com/content/2011/1/781561>`__
 
 Modelling the dynamics of contextual motion integration in the primate
 (2011).
