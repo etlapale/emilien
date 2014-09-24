@@ -10,14 +10,17 @@ Numerics
   A small patch for the numerical continuation software AUTO,
   that allows building and linking to C++ code.
 
+Documentation
+-------------
+- `bibgen </code/bibgen>`_ A bibliography generator for DocBook.
+- `db2ooxml </code/db2ooxml>`_ DocBook to Office OpenXML
+  (Word 2007 .docx) converter with support for (MathML & LaTeX)
+  equations, bibliographies, figures, and much more.
+
 Development
 -----------
 - `waf-ghc </code/waf-ghc>`_ Allows compiling with the Glasgow Haskell
   Compiler in waf.
-
-Documentation
--------------
-- `bibgen </code/bibgen>`_ A bibliography generator for DocBook.
 
 Presentation
 ------------

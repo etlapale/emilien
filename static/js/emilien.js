@@ -6,7 +6,7 @@ var locations = ["/code",
 $(document).ready(function() {
 
     var switchTo = function(page, saveHistory) {
-	$("article").fadeOut("fast", function() {
+	$("article").fadeTo("fast", 0.02, function() {
 	    // Update the welcome class
 	    if (page == "/welcome")
 		$("#content").addClass("welcome");
@@ -15,7 +15,7 @@ $(document).ready(function() {
 	    // Load the new page content
 	    $("article").load("/parts"+page+".html", function() {
 		// Show content
-		$("article").fadeIn();
+		$("article").fadeTo("slow", 1.0);
 		// Update webpage title
 		$(document).prop('title',
 				 $("article h1").text() + " - Émilien Tlapale");
