@@ -63,8 +63,8 @@ bibtexparser_
 
 Download
 --------
-`bibgen-0.1.tar.xz </data/bibgen/bibgen-0.1.tar.xz>`_
-(2014-09-17) Initial release.
+`bibgen-0.1.1.tar.xz </data/bibgen/bibgen-0.1.tar.xz>`_
+(2014-09-26) Support for bibtexparser_.
 
 `archives </data/bibgen/>`_
 
