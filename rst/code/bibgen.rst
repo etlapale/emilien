@@ -42,9 +42,9 @@ Documentation
 -------------
 
 - General concepts
-- Bibliographic databases
+- `Bibliographic databases </code/bibgen/databases>`__
 
-  - BibTeX
+  - `BibTeX </code/bibgen/bibtex>`__
   - `JSON </code/bibgen/json>`__
   - `Mendeley </code/bibgen/mendeley>`__
 - Document types
