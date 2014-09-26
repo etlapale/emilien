@@ -1,59 +1,78 @@
 bibgen
 ======
+``bibgen`` is a Python script that allows styled citations and
+bibliography generation using external bibliographic
+databases. It supports databases such as BibTeX, JSON or
+Mendeley_, and generates styled citations and bibliography
+sections for several document types including DocBook_.
+Textual citations and entries in the generated
+bibliographies are styled using rules found in `CSL
+<http://citationstyles.org/>`_ stylesheets. Thousands of those
+stylesheets are readily available, for instance through the `Zotero
+style repository <https://zotero.org/styles>`_.
 
-``bibgen`` is a Python script that creates a DocBook bibliography filled
-from the ``<citation>`` entries in the document and an external bibliography
-database.
+Most of the code is available as a library to allows
+better integration in your Python code. ``bibgen`` is a free software
+released under the `Apache License 2.0`_.
 
-The program uses `citeproc-py <https://github.com/brechtm/citeproc-py>`_
-to generate citation texts and cooked bibliography entries following
-the rules of `CSL <http://citationstyles.org/>`_ stylesheets. Thousands
-of CSL stylsheets are already downloadable, for instance through the
-`Zotero style repository <https://zotero.org/styles>`_.
+Example: DocBook
+----------------
+Using::
+ 
+    $ bibgen --mendeley -o doc-with-bib.xml doc.xml
 
-Usage
------
-
-To have ``bibgen`` generate a bibliography, insert one or multiple
-``<citation/>`` elements in your document, with text matching the citation
-key of your bibliography database. Add a ``<bibliography/>`` node to be
-filled. Then run the script to generate a new document containing the
-filled bibliography and citation texts::
-
-    $ bibgen --mendeley -o docs-with-bib.xml doc.xml
-
-This will replace citations such as
+will replace citations such as
 
 .. code:: xml
 
-    <citation>Adelson1985</citation>, a motion detector […]
     multi-scale models <citation>Bayerl2004;Tlapale2011</citation>
 
 by
 
 .. code:: xml
 
-    <citation>(<link linkend="bib-adelson1985">Adelson &amp;
-    Bergen 1985</link>)</citation>, a motion detector […]
-    multi-scale models
-    <citation>(<link linkend="bib-bayerl2004">Bayerl &amp;
-	Neumann 2004</link>; <link linkend="bib-tlapale2011">Tlapale
-	et al. 2011</link>)</citation>
+    multi-scale models <citation>(<link linkend="bayerl2004">Bayerl
+    &amp; Neumann 2004</link>; <link linkend="tlapale2010">Tlapale
+    et al. 2010</link>)</citation>
 
 and fill the ``<bibliography/>`` node with cooked ``<bibliomixed/>``
 elements.
 
-Mendeley, BibTeX and JSON bibliography databases are supported, though
-the BibTeX support in `citeproc-py`_ might be tricky.
+Documentation
+-------------
 
-Use the ``--help`` command line argument for more options.
+- General concepts
+- Bibliographic databases
+
+  - BibTeX
+  - `JSON </code/bibgen/json>`__
+  - `Mendeley </code/bibgen/mendeley>`__
+- Document types
+  
+  - `DocBook </code/bibgen/docbook>`__
+
+Requirements
+------------
+In addition to a standard Python 3 installation, ``bibgen`` requires
+the citeproc-py_ library to be available (support for CSL, JSON and
+minimalist BibTeX databases). Additionally, the following optional
+libraries may be useful:
+
+bibtexparser_
+  For enhanced BibTeX support.
 
 Download
 --------
-
 `bibgen-0.1.tar.xz </data/bibgen/bibgen-0.1.tar.xz>`_
+(2014-09-17) Initial release.
 
-News
-----
+`archives </data/bibgen/>`_
 
-2014-09-17      Initial release under the `Apache License 2.0 </data/licenses/APACHE>`_.
+.. _Apache License 2.0: /data/licenses/APACHE
+.. _AsciiDoc: http://www.asciidoc.org
+.. _bibtexparser: https://github.com/sciunto-org/python-bibtexparser
+.. _citeproc-py: https://github.com/brechtm/citeproc-py
+.. _DocBook: http://www.docbook.org
+.. _Mendeley: http://www.mendeley.com
+.. _reStructuredText: http://docutils.sf.net/rst.html
+.. _Zotero: http://www.zotero.org
