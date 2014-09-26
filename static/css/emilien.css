@@ -414,6 +414,21 @@ tt
   font-family  : "FiraMono", "Fira Mono", monospace;
 }
 
+/* Docutils messages */
+
+.system-messages
+{
+  margin       : 4pt 4pt 8pt 4pt;
+  border-left  : solid 0.5em #ffd9d3;
+  padding-left : 1em;
+  background-color : #fff7f6;
+}
+
+.system-messages h2
+{
+  color: #d35a47;
+}
+
 /* Old style */
 
 a
