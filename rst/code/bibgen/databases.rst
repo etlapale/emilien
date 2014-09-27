@@ -7,8 +7,7 @@ Zotero_ support may be added in the future but is impeded by the fact
 that Zotero locks its local sqlite database, only allowing cloudy
 access to it. This could be bypassed, for instance by setting
 toggling ``extensions.zotero.dbLockExclusive`` or by writting yet
-another browser plugin to provide the missing API. Another problem
-with Zotero is the weird key/value usage it makes of an SQL database.
+another browser plugin to provide the missing API.
 
 - BibTex_
 - JSON_
