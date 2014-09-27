@@ -80,6 +80,6 @@ to install it with its dependencies from PyPI_.
 .. _citeproc-py: https://github.com/brechtm/citeproc-py
 .. _DocBook: http://www.docbook.org
 .. _Mendeley: http://www.mendeley.com
-.. _PyPI: http://pypi.python.org
+.. _PyPI: http://pypi.python.org/pypi/bibgen
 .. _reStructuredText: http://docutils.sf.net/rst.html
 .. _Zotero: http://www.zotero.org
