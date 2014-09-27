@@ -34,6 +34,8 @@ $(document).ready(function() {
 		// Make new AJAX links
 		makeDynamicLinks($(this).find("a[href]"));
 	    });
+	    // Scroll to the top
+	    $('html, body').animate({scrollTop: 0});
 	    // Save in the history
 	    if (saveHistory)
 		history.pushState(null, null, page);
