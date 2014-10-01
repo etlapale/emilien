@@ -400,6 +400,14 @@ footer a[href]
   color: #af9793;
 }
 
+.code .comment {
+  color: #a08f7d;
+}
+
+.code .number {
+  color: #ce9d68;
+}
+
 pre
 {
   margin       : 4pt 4pt 8pt 4pt;
