@@ -2,6 +2,9 @@ var loc_re = /^\/(?!data\/)[A-Za-z0-9\-+\/]+$/;
 
 $(document).ready(function() {
 
+    // Current location
+    var currentLocation = document.location.pathname;
+
     /**
      * Scan links to make them dynamic.
      */
@@ -18,6 +21,7 @@ $(document).ready(function() {
      * Display an internal content in the main <article/> with AJAX.
      */
     var switchTo = function(page, saveHistory) {
+	console.log("switching to", page);
 	$("article").fadeTo("fast", 0.02, function() {
 	    // Update the welcome class
 	    if (page == "/welcome")
@@ -26,6 +30,8 @@ $(document).ready(function() {
 		$("#content").removeClass("welcome");
 	    // Load the new page content
 	    $("article").load("/parts"+page+".html", function() {
+		// Save the current location
+		currentLocation = page;
 		// Show content
 		$(this).fadeTo("slow", 1.0);
 		// Update webpage title
@@ -47,9 +53,30 @@ $(document).ready(function() {
      */
     $(window).bind("popstate", function(event) {
 	var loc = document.location.pathname;
-	if (loc_re.test(loc))
+	console.log("popstate to", loc, currentLocation);
+	if (loc != currentLocation && loc_re.test(loc))
 	    switchTo(loc, false);
     });
+
+    /**
+     * Smooth scrolling to local hash targets.
+     *
+    $(window).bind("hashchange", function(event) {
+	console.log("hashhchange", document.location);
+	console.log(document.location.hash);
+	// Search for the target
+	var hash = document.location.hash;
+	var targets = $(hash+", a[name='"+hash.substring(1)+"']");
+	// If found, jusmp to it
+	if (targets.length) {
+	    var target = targets.first();
+	    console.log("target found:", target);
+	    event.preventDefault();
+	    $('html, body').animate({scrollTop: target.offset().top},
+				    1000);
+	    return true;
+	}
+    });*/
 
     // Create initial AJAX links
     makeDynamicLinks($("a[href]"));
