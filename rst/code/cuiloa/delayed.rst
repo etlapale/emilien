@@ -26,7 +26,6 @@ Our delayed arrays are a form of `expression templates`_, with a
 flexible evaluation which can include C++11 lambda functions. Thanks
 to the compiler optimization, see `Loop merging`_, it is also quite
 similar to the map fusion of the Haskell Repa_ library.
-See Foobar_.
 
 Loop merging
 ------------
@@ -71,9 +70,6 @@ two multiplications, with ``vmulsd``, and the addition, with ``vaddsd``.
 
 were ``%r10`` contains the number of elements in this contiguous
 array, and compiled with clang 3.5.
-
-Foobar
-------
 
 .. _cuiloa: /code/cuiloa
 .. _expression templates: http://en.wikipedia.org/wiki/Expression_templates

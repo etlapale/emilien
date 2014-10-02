@@ -24,10 +24,11 @@ $(document).ready(function() {
 		// Search for the target
 		var hash = $(this).attr("href");
 		var targets = $(hash+", a[name='"+hash.substring(1)+"']");
-		// If found, jusmp to it
+		// If found, jump to it
 		if (targets.length) {
 		    var tgt = targets.first();
 		    $("html, body").animate({scrollTop: tgt.offset().top});
+		    history.pushState(null, null, currentLocation+hash);
 		    return false;
 		}
 	    });
@@ -37,7 +38,6 @@ $(document).ready(function() {
      * Display an internal content in the main <article/> with AJAX.
      */
     var switchTo = function(page, saveHistory) {
-	console.log("switching to", page);
 	$("article").fadeTo("fast", 0.02, function() {
 	    // Update the welcome class
 	    if (page == "/welcome")
@@ -69,30 +69,18 @@ $(document).ready(function() {
      */
     $(window).bind("popstate", function(event) {
 	var loc = document.location.pathname;
-	console.log("popstate to", loc, currentLocation);
-	if (loc != currentLocation && loc_re.test(loc))
-	    switchTo(loc, false);
-    });
-
-    /**
-     * Smooth scrolling to local hash targets.
-     *
-    $(window).bind("hashchange", function(event) {
-	console.log("hashhchange", document.location);
-	console.log(document.location.hash);
-	// Search for the target
-	var hash = document.location.hash;
-	var targets = $(hash+", a[name='"+hash.substring(1)+"']");
-	// If found, jusmp to it
-	if (targets.length) {
-	    var target = targets.first();
-	    console.log("target found:", target);
-	    event.preventDefault();
-	    $('html, body').animate({scrollTop: target.offset().top},
-				    1000);
-	    return true;
+	if (loc_re.test(loc)) {
+	    // Page change
+	    if (loc != currentLocation) {
+		switchTo(loc, false);
+	    }
+	    // Hash change, seems to be impossible to
+	    // scroll with animation yet:
+	    // http://stackoverflow.com/questions/10742422/prevent-browser-scroll-on-html5-history-popstate#12045150
+	    /*else {
+	    }*/
 	}
-    });*/
+    });
 
     // Create initial AJAX links
     makeDynamicLinks($("a[href]"));
