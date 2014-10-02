@@ -1,4 +1,5 @@
 var loc_re = /^\/(?!data\/)[A-Za-z0-9\-+\/]+$/;
+var hsh_re = /^#.+$/;
 
 $(document).ready(function() {
 
@@ -9,11 +10,26 @@ $(document).ready(function() {
      * Scan links to make them dynamic.
      */
     var makeDynamicLinks = function(selection) {
+	// AJAX page changes
 	selection
 	    .filter(function(i) { return loc_re.test($(this).attr("href")); })
             .click(function() {
 		switchTo($(this).attr("href"), true);
 		return false;
+	    });
+	// Animated scrolls
+	selection
+	    .filter(function(i) { return hsh_re.test($(this).attr("href")); })
+	    .click(function() {
+		// Search for the target
+		var hash = $(this).attr("href");
+		var targets = $(hash+", a[name='"+hash.substring(1)+"']");
+		// If found, jusmp to it
+		if (targets.length) {
+		    var tgt = targets.first();
+		    $("html, body").animate({scrollTop: tgt.offset().top});
+		    return false;
+		}
 	    });
     };
 
@@ -41,7 +57,7 @@ $(document).ready(function() {
 		makeDynamicLinks($(this).find("a[href]"));
 	    });
 	    // Scroll to the top
-	    $('html, body').animate({scrollTop: 0});
+	    $("html, body").animate({scrollTop: 0});
 	    // Save in the history
 	    if (saveHistory)
 		history.pushState(null, null, page);
