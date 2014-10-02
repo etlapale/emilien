@@ -408,6 +408,14 @@ footer a[href]
   color: #ce9d68;
 }
 
+.code.gas .error, .code.gas .label {
+  color: #a08f7d;
+}
+
+.code.gas .constant {
+  color: #82a63b;
+}
+
 pre
 {
   margin       : 4pt 4pt 8pt 4pt;

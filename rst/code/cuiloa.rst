@@ -19,7 +19,9 @@ several algorithms such as multidimensional recursive filters.
 Documentation
 -------------
 
+- `Delayed arrays </code/cuiloa/delayed>`_
 - `API documentation`_
+- `Installation notes`_
 
 Requirements
 ------------
@@ -38,3 +40,4 @@ clang 3.5 support fixed.
 .. _API documentation: /data/cuiloa/html
 .. _clang: http://clang.llvm.org
 .. _GCC: http://gcc.gnu.org
+.. _Installation notes: /data/cuiloa/html/install.html
