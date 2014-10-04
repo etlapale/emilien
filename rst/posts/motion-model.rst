@@ -1,71 +1,85 @@
----
-title: Motion model source code
-date: 2014-08-29
----
+Motion model source code
+========================
+Custom requirements
+-------------------
+C++ support in AUTO
+~~~~~~~~~~~~~~~~~~~
+For efficiency and integration with numerical software, we provide C++
+versions of our model components. In order to be able to conduct a
+continuation analysis of the model, for instance displaying its
+bifurcations, we propose a modification of the classical software
+AUTO_ that allows building and linking to C++ code.
 
-# Custom requirements
+`Documentation </posts/auto-c++>`__ |
+`Download the patch </data/auto/auto-07p-0.9.1-c++_support.patch>`__
 
-## C++ support in AUTO
+.. _AUTO: http://indy.cs.concordia.ca/auto/),
 
-For efficiency and integration with numerical software, we provide C++ versions
-of our model components. In order to be able to conduct a continuation analysis
-of the model, for instance displaying its bifurcations, we propose
-a modification of the classical software [AUTO](http://indy.cs.concordia.ca/auto/),
-that allows building and linking to C++ code.
-
-[Documentation](../posts/auto-c++.html) |
-[Download the patch](../data/auto/auto-07p-0.9.1-c++_support.patch)
-
-## Cuiloa
-
+Cuiloa
+~~~~~~
 The C++ code relies on a multidimensional array library to facilitate the
 implementation of the model in an efficient manner. This templatized library we
 propose relies heavily on the latest C++ standards (C++11 and C++14), requiring
-a modern compiler, such as [GCC](http://gcc.gnu.org) or
-[clang](http://clang.llvm.org).
+a modern compiler, such as GCC_ or clang_.
 
-[Documentation](../data/cuiloa/html/index.html) |
-[Download the tarball](../data/cuiloa/cuiloa-0.2.1.tar.xz)
+`Documentation </code/cuiloa>`__ |
+`Download the tarball </data/cuiloa/cuiloa-0.2.1.tar.xz>`__
 
-## Flowy
+.. _GCC: http://gcc.gnu.org
+.. _clang: http://clang.llvm.org
 
-Although we use standard [HDF5](http://www.hdfgroup.org/HDF5/) files as storage
-format, which are easily manipulable in a variety of programming languages, we
-provide a standalone visualization tool to generate custom displays of the
-multidimensional arrays. This software is a graphical user interface, written
-in Python with the [GTK3](http://www.gtk.org) toolkit.
+Flowy
+~~~~~
+Although we use standard HDF5_ files as storage format, which are
+easily manipulable in a variety of programming languages, we provide a
+standalone visualization tool to generate custom displays of the
+multidimensional arrays. This software is a graphical user interface,
+written in Python with the `GTK+`_ toolkit.
 
-[Documentation](../posts/flowy.html) |
-[Download the tarball](../data/flowy/flowy-0.1.0.tar.xz)
+`Documentation </code/flowy.html>`__ |
+`Download the tarball </data/flowy/flowy-0.1.0.tar.xz>`__
 
-# External dependencies
+.. _GTK+: http://www.gtk.org
+.. _HDF5: http://www.hdfgroup.org/HDF5/
 
-The C++ code requires a C++14 compatible compiler such as
-[GCC](http://gcc.gnu.org) or [clang](http://clang.llvm.org).
-[CMake](http://www.cmake.org) is used as a build system to search for the
+External dependencies
+---------------------
+The C++ code requires a C++14 compatible compiler such as GCC_ or
+clang_.  CMake_ is used as a build system to search for the
 dependencies and generating system specific make files.
 
-The Python code requires recent [Python](http:///www.python.org) 2 and 3
-compilers, as well as the [NumPy](http://numpy.scipy.org) and
-[SciPy](http://www.scipy.org) libraries. The [IPython](http://www.ipython.org)
-shell is also required to load and execute a few notebooks.
+The Python code requires recent Python_ 2 and 3 compilers, as well as
+the NumPy_ and SciPy_ libraries. The IPython_ shell is also required
+to load and execute a few notebooks.
 
-The [HDF5](http://www.hdfgroup.org/HDF5/) library is required to load and store
-the model motion [data formats](../posts/flowy.html#data-formats "Data format descriptions"). For the C++
-code, the official library needs to be compiled with C++ support. For the
-Python code, [h5py](http://www.h5py.org) is required.
+The HDF5_ library is required to load and store the model motion `data
+formats </code/flowy#data-formats>`__.  For the C++ code, the
+official library needs to be compiled with C++ support. For the Python
+code, h5py_ is required.
 
-The [SUNDIALS](http://computation.llnl.gov/casc/sundials "SUite of Nonlinear and DIfferential/ALgebraic equation Solvers") differential
-equation solvers are required to run the dynamics of the C++ models.
+The SUNDIALS_ differential equation solvers are required to run the
+non-stochastic dynamics of the C++ models.
 
-The graphical interface of [flowy](../posts/flowy.html) requires the
-[GTK+](http://www.gtk.org) library, in its third major version, as well as its
-associated [Python bindings](https://live.gnome.org/PyGObject) (note that you
-cannot use the older `pygtk` bindings).
+The graphical interface of flowy_ requires the `GTK+`_ library, in its
+third major version, as well as its associated
+`Python bindings <https://live.gnome.org/PyGObject>`__ (note that you
+cannot use the older ``pygtk`` bindings).
 
-# Model components
+.. _CMake: http://www.cmake.org
+.. _flowy: /code/flowy
+.. _h5py: http://www.h5py.org
+.. _IPython: http://www.ipython.org
+.. _NumPy: http://numpy.scipy.org
+.. _Python: http:///www.python.org
+.. _SciPy: http://www.scipy.org
+.. _SUNDIALS: http://computation.llnl.gov/casc/sundials 
 
-## IPython notebooks
+Model components
+----------------
 
-We provide some [IPython notebooks](https://ipython.atelo.org:47836/)
+IPython notebooks
+~~~~~~~~~~~~~~~~~
+We provide some `IPython notebooks <https://ipython.atelo.org:47836/>`__
 describing a few of the components in our model. Those can be run online.
+
+More to be added.

@@ -55,7 +55,9 @@ Requirements
 ------------
 In addition to a standard Python 3 installation, ``bibgen`` requires
 the citeproc-py_ library to be available (support for CSL, JSON and
-minimalist BibTeX databases). Additionally, the following optional
+minimalist BibTeX databases). Currently, the git version of
+citeproc-py_ avalaible on github is supported, version 0.1.0 is not.
+Additionally, the following optional
 libraries may be useful:
 
 bibtexparser_

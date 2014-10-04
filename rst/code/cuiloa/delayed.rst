@@ -68,7 +68,7 @@ two multiplications, with ``vmulsd``, and the addition, with ``vaddsd``.
   4027a2:   dec    %r10d
   4027a5:   jne    402750 <main+0x320>
 
-were ``%r10`` contains the number of elements in this contiguous
+where ``%r10`` contains the number of elements in this contiguous
 array, and compiled with clang 3.5.
 
 .. _cuiloa: /code/cuiloa
