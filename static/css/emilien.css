@@ -280,6 +280,11 @@ div#content
   text-decoration: none;
 }
 
+#navbar a[href] span
+{
+  display: none;
+}
+
 span.at:before
 {
   content: "@";
