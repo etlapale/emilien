@@ -19,6 +19,7 @@ several algorithms such as multidimensional recursive filters.
 Documentation
 -------------
 
+- `Tutorial </code/cuiloa/tutorial>`_
 - `Delayed arrays </code/cuiloa/delayed>`_
 - `API documentation`_
 - `Installation notes`_
@@ -29,12 +30,10 @@ Standard C++14 compiler and library, for instance through GCC_ or clang_.
 
 Download
 --------
-`cuiloa-0.2.2.tar.xz </data/cuiloa/cuiloa-0.2.2.tar.xz>`_
-(2014-10-01) Added ``Array::any`` and random number generation. HDF5 and
-clang 3.5 support fixed.
+`cuiloa-0.3.tar.xz </data/cuiloa/cuiloa-0.3.tar.xz>`_
+(2014-10-14) Delayed arrays, views, broadcasting and PNG support.
 
 `archives </data/cuiloa/>`_
-
 
 .. _Apache License 2.0: /data/licenses/APACHE
 .. _API documentation: /data/cuiloa/html
