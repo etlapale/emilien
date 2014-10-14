@@ -1,5 +1,13 @@
 Code
 ====
+Numerics
+--------
+- `cuiloa </code/cuiloa>`_
+  A C++ multidimensional array template library with I/O support and
+  recursive filter implementations.
+- `C++ support for AUTO </posts/auto-c++>`_
+  A small patch for the numerical continuation software AUTO,
+  that allows building and linking to C++ code.
 
 Text processing
 ---------------
@@ -10,14 +18,6 @@ Text processing
   (Word 2007 .docx) converter with support for (MathML & LaTeX)
   equations, bibliographies, figures, and much more.
 
-Numerics
---------
-- `cuiloa </code/cuiloa>`_
-  A C++ multidimensional array template library with I/O support and
-  recursive filter implementations.
-- `C++ support for AUTO </posts/auto-c++>`_
-  A small patch for the numerical continuation software AUTO,
-  that allows building and linking to C++ code.
 
 Development
 -----------
