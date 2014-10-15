@@ -180,6 +180,7 @@ div#content
 
 #main-pages #code
 {
+  display: inline-block;
   width: 33%;
 }
 
@@ -415,7 +416,6 @@ footer a[href]
 
 .code .comment {
   color: #a08f7d;
-  display: inline;
 }
 
 .code .number {
