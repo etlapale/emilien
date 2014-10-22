@@ -15,8 +15,8 @@ Text processing
   several text document formats (including DocBook) and multiple
   biliography databases (such as BibTeX, JSON, or Mendeley).
 - `db2ooxml </code/db2ooxml>`_ DocBook to Office OpenXML
-  (Word 2007 .docx) converter with support for (MathML & LaTeX)
-  equations, bibliographies, figures, and much more.
+  (Word 2007 .docx) converter with support for equations,
+  bibliographies, changes/revisions, figures, and much more.
 
 
 Development

@@ -18,7 +18,6 @@ several algorithms such as multidimensional recursive filters.
 
 Documentation
 -------------
-
 - `Tutorial </code/cuiloa/tutorial>`_
 - `Delayed arrays </code/cuiloa/delayed>`_
 - `API documentation`_
