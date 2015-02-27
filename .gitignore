@@ -10,3 +10,4 @@ _cache
 build
 __pycache__
 \#*\#
+static/js/jquery.min.js

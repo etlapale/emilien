@@ -1,9 +1,19 @@
 SRV=ovo:web
 
-.PHONY: debug publish
+JQUERY_VERSION=2.1.3
 
-debug:
+.PHONY: build debug deps publish
+
+build: deps
+	./mksite.py
+
+deps: static/js/jquery.min.js
+
+static/js/jquery.min.js:
+	if [ ! -e $@ ] ; then wget https://code.jquery.com/jquery-$(JQUERY_VERSION).min.js -O $@ ; fi
+
+debug: build
 	rsync -avz --exclude='*.pdf' build/ $(SRV)/neo
 
-publish:
+publish: build
 	rsync -avz build/ $(SRV)
