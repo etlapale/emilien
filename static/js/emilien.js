@@ -80,6 +80,9 @@ $(document).ready(function() {
 	    /*else {
 	    }*/
 	}
+	else if (loc == "/") {
+	    switchTo("/welcome", false);
+	}
     });
 
     // Create initial AJAX links
