@@ -54,9 +54,6 @@ body
   color        : rgb(46,52,54);
   font-family  : "FiraSans", "Fira Sans", sans-serif;
   font-size    : 13pt;
-  margin-left  : auto;
-  margin-right : auto;
-  width        : 50em;
 }
 
 div#content
@@ -86,19 +83,6 @@ div#content
   float: left;
   margin-top: 0ex;
   margin-left: 0.25em;
-}
-
-.welcome img
-{
-  margin-top: 3.5ex;
-  width: 9.3em;
-}
-
-#intro {
-  float: right;
-  margin-right: 4em;
-  margin-top: 4ex;
-  margin-bottom: 2ex;
 }
 
 .spacer {
@@ -164,24 +148,6 @@ div#content
 {
   text-align: right;
   color: #c4d0ab;
-}
-
-#main-pages #research
-{
-  float: left;
-  width: 33%;
-}
-
-#main-pages #misc
-{
-  float: right;
-  width: 33%;
-}
-
-#main-pages #code
-{
-  display: inline-block;
-  width: 33%;
 }
 
 #main-pages .topic
@@ -515,4 +481,62 @@ blockquote
 {
   font-style : italic;
   text-align : right;
+}
+
+/* Small size display */
+
+.welcome img
+{
+  display: none;
+}
+
+#intro {
+  float: right;
+  margin-right: 1em;
+  margin-top: 1ex;
+  margin-bottom: .5ex;
+}
+
+@media (min-width:840px)
+{ 
+  .welcome img
+  {
+    margin-top: 3.5ex;
+    width: 9.3em;
+    display: inline;
+  }
+
+  #intro {
+    margin-right: 4em;
+    margin-top: 4ex;
+    margin-bottom: 2ex;
+  }
+
+  #main-pages #research
+  {
+    float: left;
+    width: 33%;
+  }
+
+  #main-pages #misc
+  {
+    float: right;
+    width: 33%;
+  }
+
+  #main-pages #code
+  {
+    display: inline-block;
+    width: 33%;
+  }
+}
+
+@media (min-width:1024px)
+{ 
+  body
+  {
+    margin-left  : auto;
+    margin-right : auto;
+    width        : 50em;
+  }
 }
