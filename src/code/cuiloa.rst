@@ -29,8 +29,8 @@ Standard C++14 compiler and library, for instance through GCC_ or clang_.
 
 Download
 --------
-`cuiloa-0.3.tar.xz </data/cuiloa/cuiloa-0.3.tar.xz>`_
-(2014-10-14) Delayed arrays, views, broadcasting and PNG support.
+`cuiloa-0.3.1.tar.xz </data/cuiloa/cuiloa-0.3.1.tar.xz>`_
+(2014-11-20) Added operators, trigonometrics and interpolation functions.
 
 `archives </data/cuiloa/>`_
 
