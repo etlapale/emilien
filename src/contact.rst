@@ -9,3 +9,7 @@ Contact
 | Irvine, CA 92697-5100
 
 | Lab: +1 (949) 824-6834
+
+LinkedIn_
+
+.. _LinkedIn: http://www.linkedin.com/in/etlapale
