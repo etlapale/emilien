@@ -412,7 +412,7 @@ tt
 
 /* Docutils messages */
 
-.system-messages
+.system-messages, .system-message
 {
   margin       : 4pt 4pt 8pt 4pt;
   border-left  : solid 0.5em #ffd9d3;
@@ -420,7 +420,7 @@ tt
   background-color : #fff7f6;
 }
 
-.system-messages h2
+.system-messages h2, .system-message-title
 {
   color: #d35a47;
 }
