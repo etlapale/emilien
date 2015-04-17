@@ -4,6 +4,11 @@ Research
 Motion integration dynamics
 ---------------------------
 
+Construction and evaluation of an integrated dynamical model of visual motion perception (2015).
+É. Tlapale, B.A. Dosher, Z.-L. Lu.
+Neural Networks (*in press*).
+`Article <http://www.sciencedirect.com/science/article/pii/S0893608015000672>`__
+
 Modelling the dynamics of motion integration with a new
 luminance-gated diffusion mechanism (2010).
 É. Tlapale, G.S. Masson, P. Kornprobst.
