@@ -425,6 +425,16 @@ tt
   color: #d35a47;
 }
 
+a[href^="http://www.linkedin.com"] {
+    content: "";
+}
+
+a[href^="http://www.linkedin.com"]:before {
+    font-family: FontAwesome;
+    content: "\f0e1";
+    margin-right: .25em;
+}
+
 /* Old style */
 
 a
