@@ -1,14 +1,20 @@
 Code
 ====
+
 Numerics
 --------
-- `cuiloa </code/cuiloa>`_
-  A C++ multidimensional array template library with I/O support and
-  recursive filter implementations.
+- `Necomi <http://necomi.atelo.org>`_ A C++ template library for
+  multidimensional arrays. It allows easy manipulation of slices,
+  shared views, I/O, and provides multiple numerical functions.
 - `C++ support for AUTO </posts/auto-c++>`_
   A small patch for the numerical continuation software AUTO,
   that allows building and linking to C++ code.
 
+Science
+-------
+- `plstim </code/plstim>`_ A Qt5 and OpenGL software to run visual
+  psychophysics experiments.
+  
 Text processing
 ---------------
 - `bibgen </code/bibgen>`_ A bibliography generator supporting
@@ -28,3 +34,10 @@ Graphics
 --------
 - `InkSyntax </code/inksyntax>`_ A source code syntax highlighter
   plugin for Inkscape.
+- `jessyink2pdf </code/jessyink2pdf>`_ Converts JessyInk slides to
+  PDF librsvg.
+
+Some of those projects, and some others, can be found on the `Gitlab
+instance`_.
+
+.. _Gitlab instance: http://git.atelo.org/u/etlapale

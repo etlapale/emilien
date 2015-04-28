@@ -25,5 +25,7 @@ Download
 
 `archives </data/db2ooxml>`_
 
+`Project website <http://git.atelo.org/etlapale/db2ooxml>`_
+
 .. _DocBook: http://www.docbook.org
 .. _bibgen: /code/bibgen

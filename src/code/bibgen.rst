@@ -13,7 +13,7 @@ style repository <https://zotero.org/styles>`_.
 
 Most of the code is available as a library to allows
 better integration in your Python code. ``bibgen`` is a free software
-released under the `Apache License 2.0`_.
+released under the `Simplified BSD License`_.
 
 Example: DocBook
 ----------------
@@ -76,7 +76,9 @@ You may prefer to use::
 
 to install it with its dependencies from PyPI_.
 
-.. _Apache License 2.0: /data/licenses/APACHE
+`Project website <http://git.atelo.org/etlapale/bibgen>`_
+
+.. _Simplified BSD License: /data/licenses/BSD
 .. _AsciiDoc: http://www.asciidoc.org
 .. _bibtexparser: https://github.com/sciunto-org/python-bibtexparser
 .. _citeproc-py: https://github.com/brechtm/citeproc-py

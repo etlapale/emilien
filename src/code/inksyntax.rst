@@ -13,6 +13,8 @@ Download
 |
 `archives </data/inksyntax>`_
 
+`Project website <http://git.atelo.org/etlapale/inksyntax>`_
+
 Install
 -------
 To use Inkscape, copy the two extension files, ``inksyntax.inx`` and
