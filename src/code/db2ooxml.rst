@@ -21,8 +21,8 @@ Documentation
 Download
 --------
 `db2ooxml-0.1.1.tar.xz </data/db2ooxml/db2ooxml-0.1.1.tar.xz>`_
-(2014-10-22) Display revisions for ``<phrase/>`` elements.
-
+(2014-10-22) Display revisions in ``<phrase/>``.
+|
 `archives </data/db2ooxml>`_
 
 `Project website <http://git.atelo.org/etlapale/db2ooxml>`_

@@ -26,7 +26,7 @@ Download
 
 `plstim-0.1.tar.xz <http://emilien.tlapale.com/data/plstim/plstim-0.1.tar.xz>`_
 (2015-04-25) Updated to work with Qt 5.4 on Linux.
-
+|
 `archives <http://emilien.tlapale.com/data/plstim/>`_
 
 `Project website <http://git.atelo.org/etlapale/plstim>`_

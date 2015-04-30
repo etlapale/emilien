@@ -67,16 +67,16 @@ Download
 --------
 `bibgen-0.1.1.tar.xz </data/bibgen/bibgen-0.1.tar.xz>`_
 (2014-09-26) Support for bibtexparser_.
-
+|
 `archives </data/bibgen/>`_
+
+`Project website <http://git.atelo.org/etlapale/bibgen>`_
 
 You may prefer to use::
 
     pip install --user bibgen
 
 to install it with its dependencies from PyPI_.
-
-`Project website <http://git.atelo.org/etlapale/bibgen>`_
 
 .. _Simplified BSD License: /data/licenses/BSD
 .. _AsciiDoc: http://www.asciidoc.org
