@@ -12,11 +12,15 @@ document with embedded media.
 
 Documentation
 -------------
-- `Usage </code/db2ooxml/usage>`_
-- `Revisions </code/db2ooxml/revisions>`_
-- `Hyperlinks </code/db2ooxml/links>`_
-- `Equations </code/db2ooxml/equations>`_
-- `Figures </code/db2ooxml/figures>`_
+
+.. toctree::
+   :maxdepth: 2
+
+   db2ooxml/usage
+   db2ooxml/revisions
+   db2ooxml/links
+   db2ooxml/equations
+   db2ooxml/figures
 
 Download
 --------
@@ -28,4 +32,4 @@ Download
 `Project website <http://git.atelo.org/etlapale/db2ooxml>`_
 
 .. _DocBook: http://www.docbook.org
-.. _bibgen: /code/bibgen
+

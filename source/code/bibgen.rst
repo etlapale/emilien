@@ -41,15 +41,11 @@ elements.
 Documentation
 -------------
 
-- General concepts
-- `Bibliographic databases </code/bibgen/databases>`__
+.. toctree::
+   :maxdepth: 2
 
-  - `BibTeX </code/bibgen/bibtex>`__
-  - `JSON </code/bibgen/json>`__
-  - `Mendeley </code/bibgen/mendeley>`__
-- Document types
-  
-  - `DocBook </code/bibgen/docbook>`__
+   bibgen/databases
+   bibgen/doctypes
 
 Requirements
 ------------

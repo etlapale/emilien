@@ -5,7 +5,8 @@ Description
 -----------
 Flowy provides a motion field viewer for 2D spatial representations.
 
-.. image:: /data/flowy/screenshots/flowy-1.png
+.. image:: flowy/flowy-1.png
+   :scale: 50%
 
 Dowload
 -------
