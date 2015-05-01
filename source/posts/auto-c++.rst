@@ -1,8 +1,6 @@
 C++ support in AUTO
 ===================
 :Date: 2014-08-29
-:foobar: 23
-:param i2: str
 
 Hereafter you can find a patch
 for `AUTO <http://indy.cs.concordia.ca/auto/>`_, adding support for

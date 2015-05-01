@@ -1,0 +1,21 @@
+Welcome
+=======
+
+To the homepage of Émilien Tlapale vision scientist in the lab of
+Barbara Dosher.
+
+.. toctree::
+   :maxdepth: 1
+	      
+   research
+   code
+
+.. toctree::
+   :hidden:
+      
+   posts/vss-2014
+   posts/motion-model
+   posts/auto-c++
+   posts/vss-2013
+   contact
+   40x
