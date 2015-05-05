@@ -40,7 +40,7 @@ Graphics
 Those projects, and some others, can be found on the associated `Gitlab
 instance`_.
 
-.. _Gitlab instance: http://git.atelo.org/u/etlapale
+.. _Gitlab instance: https://git.atelo.org/u/etlapale
 
 .. toctree::
    :hidden:
