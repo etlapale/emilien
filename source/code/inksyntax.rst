@@ -13,7 +13,7 @@ Download
 |
 `archives </data/inksyntax>`_
 
-`Project website <http://git.atelo.org/etlapale/inksyntax>`_
+`Project website <https://git.atelo.org/etlapale/inksyntax>`_
 
 Install
 -------

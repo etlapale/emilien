@@ -10,8 +10,7 @@ continuation analysis of the model, for instance displaying its
 bifurcations, we propose a modification of the classical software
 AUTO_ that allows building and linking to C++ code.
 
-`Documentation </posts/auto-c++>`__ |
-`Download the patch </data/auto/auto-07p-0.9.1-c++_support.patch>`__
+:doc:`auto-c++`
 
 .. _AUTO: http://indy.cs.concordia.ca/auto/),
 

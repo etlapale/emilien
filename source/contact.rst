@@ -2,7 +2,7 @@ Contact
 =======
 
 | Émilien Tlapale <emilien@tlapale.com>
-| Public key: `7876091B </data/ego/et.pgp>`_
+| Public key: `7876091B <http://emilien.tlapa/data/ego/et.pgp>`_
 
 | 3151 Social Science Plaza A  
 | University of California, Irvine  
@@ -10,6 +10,7 @@ Contact
 
 | Lab: +1 (949) 824-6834
 
-LinkedIn_
+Gitlab_  LinkedIn_
 
 .. _LinkedIn: http://www.linkedin.com/in/etlapale
+.. _Gitlab: https://git.atelo.org/u/etlapale

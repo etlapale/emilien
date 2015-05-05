@@ -11,9 +11,9 @@ concatenated using pdftk_ to get the final result.
 Download
 --------
 
-`jessyink2pdf.py </data/jessyink2pdf/jessyink2pdf.py>`_
+`jessyink2pdf.py <http://emilien.tlapale.com/data/jessyink2pdf/jessyink2pdf.py>`_
 
-`Project website <http://git.atelo.org/etlapale/jessyink2pdf>`_
+`Project website <https://git.atelo.org/etlapale/jessyink2pdf>`_
 
 .. _JessyInk: https://code.google.com/p/jessyink/
 .. _librsvg: http://live.gnome.org/LibRsvg
