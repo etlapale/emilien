@@ -40,4 +40,4 @@ Fortran program, ``OPT``, ``CFLAGS``, ``CXXFLAGS`` and ``FFLAGS``
 control the general optimization and language-specific flags.
 ``LDFLAGS`` are applied to the linking stage.
 
-`Download the patch </data/auto/auto-07p-0.9.1-c++_support.patch>`_
+`Download the patch <http://emilien.tlapale.com/data/auto/auto-07p-0.9.1-c++_support.patch>`_
