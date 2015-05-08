@@ -14,9 +14,5 @@ Barbara Dosher.
 
 .. toctree::
    :hidden:
-      
-   posts/vss-2014
-   posts/motion-model
-   posts/auto-c++
-   posts/vss-2013
+
    40x
