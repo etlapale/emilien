@@ -12,3 +12,4 @@ __pycache__
 \#*\#
 static/js/jquery.min.js
 *.png
+.#*

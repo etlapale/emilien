@@ -108,6 +108,8 @@ html_theme = 'emilien-sphinx'
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['.']
 
+html_context = {'source_repository': 'https://git.atelo.org/etlapale/homepage/blob/master/source'}
+
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 #html_title = None
@@ -176,7 +178,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'milienTlapaleHomepagedoc'
+htmlhelp_basename = 'EmilienTlapaleHomepagedoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
