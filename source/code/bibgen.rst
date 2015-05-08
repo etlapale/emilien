@@ -17,23 +17,25 @@ released under the `Simplified BSD License`_.
 
 Example: DocBook
 ----------------
-Using::
- 
-    $ bibgen --mendeley -o doc-with-bib.xml doc.xml
+Using:
+
+.. code-block:: console
+
+   $ bibgen --mendeley -o doc-with-bib.xml doc.xml
 
 will replace citations such as
 
-.. code:: xml
+.. code-block:: xml
 
-    multi-scale models <citation>Bayerl2004;Tlapale2011</citation>
+   multi-scale models <citation>Bayerl2004;Tlapale2011</citation>
 
 by
 
-.. code:: xml
+.. code-block:: xml
 
-    multi-scale models <citation>(<link linkend="bayerl2004">Bayerl
-    &amp; Neumann 2004</link>; <link linkend="tlapale2010">Tlapale
-    et al. 2010</link>)</citation>
+   multi-scale models <citation>(<link linkend="bayerl2004">Bayerl
+   &amp; Neumann 2004</link>; <link linkend="tlapale2010">Tlapale
+   et al. 2010</link>)</citation>
 
 and fill the ``<bibliography/>`` node with cooked ``<bibliomixed/>``
 elements.
@@ -41,15 +43,11 @@ elements.
 Documentation
 -------------
 
-- General concepts
-- `Bibliographic databases </code/bibgen/databases>`__
+.. toctree::
+   :maxdepth: 2
 
-  - `BibTeX </code/bibgen/bibtex>`__
-  - `JSON </code/bibgen/json>`__
-  - `Mendeley </code/bibgen/mendeley>`__
-- Document types
-  
-  - `DocBook </code/bibgen/docbook>`__
+   bibgen/databases
+   bibgen/doctypes
 
 Requirements
 ------------
@@ -72,9 +70,11 @@ Download
 
 `Project website <http://git.atelo.org/etlapale/bibgen>`_
 
-You may prefer to use::
+You may prefer to use:
 
-    pip install --user bibgen
+.. code-block:: console
+
+   pip install --user bibgen
 
 to install it with its dependencies from PyPI_.
 

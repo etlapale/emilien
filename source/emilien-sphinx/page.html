@@ -1,0 +1,24 @@
+{%- extends "layout.html" %}
+
+{# Main navigation bar is for website topics #}
+{% block navbar %}
+  <ul id="navbar">
+    <li><a class="fa fa-home" title="Home" href="{{ pathto('index') }}"><span>Home</span></a></li>
+    <li><a class="fa fa-university" title="Research" href="{{ pathto('research') }}"><span>Research</span></a></li>
+    <li><a class="fa fa-terminal" title="Code" href="{{ pathto('code') }}"><span>Code</span></a></li>
+    <li><a class="fa fa-send" title="Contact" href="{{ pathto('contact') }}"><span>Contact</span></a></li>
+  </ul>
+{% endblock %}
+
+{% block body %}
+  {% if pagename == 'index' %}
+    {% include 'welcome.html' %}
+  {% else %}
+    {{ body }}
+  {% endif %}
+{% endblock %}
+
+
+{# Local Variables: #}
+{# mode: jinja2 #}
+{# End: #}

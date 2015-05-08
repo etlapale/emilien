@@ -10,20 +10,20 @@ continuation analysis of the model, for instance displaying its
 bifurcations, we propose a modification of the classical software
 AUTO_ that allows building and linking to C++ code.
 
-`Documentation </posts/auto-c++>`__ |
-`Download the patch </data/auto/auto-07p-0.9.1-c++_support.patch>`__
+:doc:`auto-c++`
 
 .. _AUTO: http://indy.cs.concordia.ca/auto/),
 
-Cuiloa
+Necomi
 ~~~~~~
-The C++ code relies on a multidimensional array library to facilitate the
-implementation of the model in an efficient manner. This templatized library we
-propose relies heavily on the latest C++ standards (C++11 and C++14), requiring
-a modern compiler, such as GCC_ or clang_.
 
-`Documentation </code/cuiloa>`__ |
-`Download the tarball </data/cuiloa/cuiloa-0.2.1.tar.xz>`__
+The C++ code relies on a multidimensional array library to facilitate
+the implementation of the model in an efficient manner. This
+templatized library we propose relies heavily on the latest C++
+standards (C++11 and C++14), requiring a modern compiler, such as GCC_
+or clang_.
+
+`Necomi website <http://necomi.atelo.org>`_
 
 .. _GCC: http://gcc.gnu.org
 .. _clang: http://clang.llvm.org
@@ -36,11 +36,16 @@ standalone visualization tool to generate custom displays of the
 multidimensional arrays. This software is a graphical user interface,
 written in Python with the `GTK+`_ toolkit.
 
-`Documentation </code/flowy.html>`__ |
+:doc:`Documentation <../code/flowy>` |
 `Download the tarball </data/flowy/flowy-0.1.0.tar.xz>`__
 
 .. _GTK+: http://www.gtk.org
 .. _HDF5: http://www.hdfgroup.org/HDF5/
+
+.. toctree::
+   :hidden:
+
+   ../code/flowy
 
 External dependencies
 ---------------------

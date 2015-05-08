@@ -8,14 +8,14 @@ element to be the cited entry key. For instance, having a bibliography
 entry whose citation is set to ``Bayerl2004``, you can insert a
 DocBook citation with:
 
-.. code:: xml
+.. code-block:: xml
 
   <citation>Bayerl2004</citation>
 
 If you want to refer to multiple entries in a single citation,
 separate them with semi-columns:
 
-.. code:: xml
+.. code-block:: xml
 
   <citation>Bayerl2004;Tlapale2010</citation>
 
@@ -31,7 +31,7 @@ with textual content including one of multiple <`link/`_> elements
 pointing to entries in the generated bibliography. Typically, a filled
 in citation would look like:
 
-.. code:: xml
+.. code-block:: xml
 
     <citation>
     (<link linkend="bayerl2004">Bayerl &amp; Neumann 2004</link>;
@@ -43,7 +43,7 @@ citation keys. You can customize them by specifying a prefix, using
 the ``-p`` or ``--link-prefix`` command line argument, or passing a
 function as ``link_format`` argument to ``process_dom()``:
 
-.. code:: python
+.. code-block:: python
 
     bibgen.process_dom(…, link_format=lambda key: 'bib-'+key.lower())
 
@@ -53,7 +53,7 @@ Each entry in the bibliography is a cooked citation, a <`bibliomixed/`_>
 element, that follows the current CSL stylesheet, with an ``xml:id``
 attribute matching the ``linkend`` format inside the citations:
 
-.. code:: xml
+.. code-block:: xml
 
     <bibliomixed xml:id="bib-tlapale2010">
     Tlapale, É. et al., 2010.
