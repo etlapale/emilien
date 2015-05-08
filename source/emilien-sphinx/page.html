@@ -12,6 +12,7 @@
 
 {% block body %}
   {% if pagename == 'index' %}
+    {% include 'welcome.html' %}
   {% else %}
     {{ body }}
   {% endif %}

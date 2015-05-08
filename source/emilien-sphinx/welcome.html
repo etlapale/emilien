@@ -1,0 +1,39 @@
+<h1>Welcome!</h1>
+<img alt="Welcoming figure" src="/images/welcome.png">
+<p id="intro">
+  <span>To the homepage of</span>
+  <span id="name">Émilien Tlapale</span>
+  <span id="job">vision scientist</span>
+  <span>in the lab of
+    <a title="Visit the lab website" href="http://www.socsci.uci.edu/maplab/" class="spanlink">Barbara Dosher</a>.</span>
+</p>
+<div class="spacer"></div>
+<div id="main-pages">
+  <div class="topic" id="research">
+    <h2><span class="fa fa-university"></span> Research</h2>
+    <p>About models of visual motion perception,
+      perceptual learning experiments and low vision.</p>
+    <a title="Past, present and future research" href="{{ pathto('research') }}" class="spanlink"><span class="topic-spanner"></span></a>
+  </div>
+  <div class="topic" id="code">
+    <h2><span class="fa fa-terminal"></span> Code</h2>
+    <p>Patches, plugins, scripts and larger software that may
+      of may not have a scientific purpose.</p>
+    <a title="Search the code for something nice" href="{{ pathto('code') }}" class="spanlink"><span class="topic-spanner"></span></a>
+  </div>
+  <div class="topic" id="misc">
+    <h2><span class="fa fa-bicycle"></span> Misc</h2>
+    <ul>
+      <li><a href="{{ pathto('posts') }}"><span class="fa fa-leaf"></span> Posts</a></li>
+      <li><a href=""><span class="fa fa-graduation-cap"></span> Teaching</a></li>
+      <li><a href="{{ pathto('contact') }}"><span class="fa fa-send"></span> Contact</a></li>
+    </ul>
+    <p></p>
+    <a><span class="topic-spanner"></span></a>
+  </div>
+</div>
+<div class="spacer"></div>
+
+{# Local Variables: #}
+{# mode: jinja2 #}
+{# End: #}

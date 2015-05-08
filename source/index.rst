@@ -9,6 +9,8 @@ Barbara Dosher.
 	      
    research
    code
+   posts
+   contact
 
 .. toctree::
    :hidden:
@@ -17,5 +19,4 @@ Barbara Dosher.
    posts/motion-model
    posts/auto-c++
    posts/vss-2013
-   contact
    40x
