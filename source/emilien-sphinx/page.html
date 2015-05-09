@@ -7,6 +7,7 @@
     <li><a class="fa fa-university" title="Research" href="{{ pathto('research') }}"><span>Research</span></a></li>
     <li><a class="fa fa-terminal" title="Code" href="{{ pathto('code') }}"><span>Code</span></a></li>
     <li><a class="fa fa-send" title="Contact" href="{{ pathto('contact') }}"><span>Contact</span></a></li>
+    <li><a class="fa fa-search" title="Search" href="{{ pathto('search') }}"><span>Search</span></a></li>
   </ul>
 {% endblock %}
 
@@ -16,6 +17,10 @@
   {% else %}
     {{ body }}
   {% endif %}
+{% endblock %}
+
+{% block show_source %}
+  (<a href="https://git.atelo.org/etlapale/homepage/blob/master/source/{{ pagename }}.rst" rel="nofollow">{{ _('source') }}</a>)
 {% endblock %}
 
 {# Local Variables: #}
