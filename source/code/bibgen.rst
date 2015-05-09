@@ -68,7 +68,7 @@ Download
 |
 `archives </data/bibgen/>`_
 
-`Project website <http://git.atelo.org/etlapale/bibgen>`_
+`Project website <https://git.atelo.org/etlapale/bibgen>`_
 
 You may prefer to use:
 

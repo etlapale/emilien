@@ -35,7 +35,7 @@ Graphics
 - :doc:`code/inksyntax` A source code syntax highlighter
   plugin for Inkscape.
 - :doc:`code/jessyink2pdf` Converts JessyInk slides to
-  PDF librsvg.
+  PDF with librsvg.
 
 Those projects, and some others, can be found on the associated `Gitlab
 instance`_.
