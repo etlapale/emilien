@@ -6,9 +6,16 @@
       <h1>Page not found!</h1>
       <p>It seems that the page you are trying to find is not
 	available on this website. The webmaster has been notified of
-	his fault, do not hesitate to <a href="contact.html">contact
-	him</a> if you feel the urge. You may also want to return to
-	the <a href="index.html">front page</a>.</p>
+	his fault, do not hesitate to
+	<a href="{{ pathto('contact') }}">
+	  <span class="fa fa-send"></span> contact him</a>
+	if you feel the urge. You may also want to return to the
+	<a href="{{ pathto('index') }}">
+	  <span class="fa fa-home"></span> front page</a>
+	or
+	<a href="{{ pathto('search') }}">
+	  <span class="fa fa-search"></span> search</a>
+	for something specific.</p>
     </div>
   </article>
 {% endblock %}
