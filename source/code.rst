@@ -12,7 +12,7 @@ Numerics
 
 Science
 -------
-- `plstim <http://plstim.atelo.org>`_ A Qt5 and OpenGL software to run visual
+- :doc:`plstim/doc/source/index` A Qt5 and OpenGL software to run visual
   psychophysics experiments.
   
 Text processing
@@ -46,6 +46,7 @@ instance`_.
    :hidden:
 
    posts/auto-c++
+   plstim/doc/source/index
    code/bibgen
    code/db2ooxml
    code/waf-ghc

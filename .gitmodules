@@ -1,3 +1,6 @@
 [submodule "source/poco-sphinx"]
 	path = source/poco-sphinx
 	url = https://git.atelo.org/etlapale/poco-sphinx.git
+[submodule "source/plstim"]
+	path = source/plstim
+	url = https://git.atelo.org/etlapale/plstim.git
