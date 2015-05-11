@@ -113,7 +113,8 @@ html_context = {'navbar_elements': [('index', 'Home', 'fa-home'),
                                     ('code', 'Code', 'fa-terminal'),
                                     ('contact', 'Contact', 'fa-send'),
                                     ('search', 'Search', 'fa-search')],
-                'source_repository': 'https://git.atelo.org/etlapale/homepage/blob/master/source'}
+                'source_repository': 'https://git.atelo.org/etlapale/homepage/blob/master/source',
+                'other_repositories': {'plstim': 'https://git.atelo.org/etlapale/plstim/blob/develop'}}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -247,8 +248,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'milienTlapaleHomepage', u'Émilien Tlapale Homepage Documentation',
-   u'Émilien Tlapale', 'milienTlapaleHomepage', 'One line description of project.',
+  ('index', 'EmilienTlapaleHomepage', u'Émilien Tlapale Homepage Documentation',
+   u'Émilien Tlapale', 'EmilienTlapaleHomepage', 'One line description of project.',
    'Miscellaneous'),
 ]
 
