@@ -18,7 +18,7 @@ import os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+#sys.path.insert(0, os.path.abspath('../sphinxcontrib-fulltoc'))
 
 # -- General configuration ------------------------------------------------
 
@@ -155,7 +155,8 @@ html_static_path = ['_static']
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-html_additional_pages = {'40x': '40x.html'}
+html_additional_pages = {'40x': '40x.html',
+                         'sitemap': 'sitemap.html'}
 
 # If false, no module index is generated.
 #html_domain_indices = True

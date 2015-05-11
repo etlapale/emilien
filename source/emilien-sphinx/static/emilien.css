@@ -1,0 +1,143 @@
+@import url("poco.css");
+
+.welcome h1, h1.welcome
+{
+  color: #cf6656;
+  font-size: 220%;
+  font-weight: 900;
+  float: left;
+  margin-top: 0ex;
+  margin-left: 0.25em;
+}
+
+#intro span
+{
+  font-size: 140%;
+  color: #9bb5c6;
+  background-color: #ebf7fd;
+  font-weight: bold;
+  margin: 0;
+  /*display: inline;*/
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border-radius: 0.3em;
+
+  display: block;
+  float: left;
+  clear: both;
+  margin-bottom: 0.3ex;
+}
+
+#intro #name
+{
+  color: #466c84;
+  font-weight: 900;
+  font-size: 200%;
+}
+
+#intro #job
+{
+  background-color: #fff3e6;
+  color: #ce9d68;
+  font-size: 160%;
+}
+
+#intro a[href]
+{
+  border: none;
+  color: #a1b2bd;
+}
+
+#intro a[href]:hover
+{
+  color: #879095;
+  background-color: none;
+}
+
+#main-pages h2
+{
+  /*color: #8da264;*/
+  color: #7b9f35;
+  font-size: 150%;
+  font-weight: bold;
+  margin-top: 0.5ex;
+  margin-bottom: 0.1ex;
+  margin-left: 0;
+}
+
+#main-pages h2 span.fa
+{
+  text-align: right;
+  color: #c4d0ab;
+}
+
+#main-pages .topic
+{
+  position: relative;
+  border-radius: 1em;
+}
+
+#main-pages .topic:hover
+{
+  background-color: #fff3e6;
+}
+
+#main-pages .topic:hover h2
+{
+  color: #e98b25;
+}
+
+#main-pages .topic:hover h2 span.fa
+{
+  color: #d39047;
+}
+
+#main-pages .topic-spanner
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.welcome p, p.welcome
+{
+  margin: 0;
+}
+
+#misc ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#misc a[href]
+{
+  color: #8b765f;
+  position: relative;
+  z-index: 2;
+}
+
+#misc a[href]:hover
+{
+  color: #d45a47;
+}
+
+#content .welcome a[href^="https://git.atelo.org/"]:before {
+    content: none;
+}
+
+.welcome .quicklinks-1
+{
+    float: left;
+    width: 48%;
+}
+
+.welcome .quicklinks-2
+{
+    float: right;
+    width: 48%;
+}
