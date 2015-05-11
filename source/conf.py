@@ -108,7 +108,12 @@ html_theme = 'emilien-sphinx'
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['.']
 
-html_context = {'source_repository': 'https://git.atelo.org/etlapale/homepage/blob/master/source'}
+html_context = {'navbar_elements': [('index', 'Home', 'fa-home'),
+                                    ('research', 'Research', 'fa-university'),
+                                    ('code', 'Code', 'fa-terminal'),
+                                    ('contact', 'Contact', 'fa-send'),
+                                    ('search', 'Search', 'fa-search')],
+                'source_repository': 'https://git.atelo.org/etlapale/homepage/blob/master/source'}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
