@@ -11,8 +11,3 @@ Barbara Dosher.
    code
    posts
    contact
-
-.. toctree::
-   :hidden:
-
-   40x
