@@ -17,7 +17,17 @@ Science
 -------
 - :doc:`plstim/doc/source/index` A Qt5 and OpenGL software to run visual
   psychophysics experiments.
-  
+
+wblanes
+~~~~~~~
+A western blot image analyzer for
+quantification of possibly overlapping bands.
+
+.. image:: images/wblanes-fit.png
+   :scale: 30%
+
+`Repository <https://git.atelo.org/etlapale/wblanes>`_
+	       
 Text processing
 ---------------
 - :doc:`code/bibgen` A bibliography generator supporting several text
