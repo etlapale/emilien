@@ -1,6 +1,9 @@
 Code
 ====
 
+My public projects are available on a `Gitlab instance`_, but some of them
+are also described here:
+
 Numerics
 --------
 - `Necomi <http://necomi.atelo.org>`_ A C++ template library for
@@ -37,9 +40,8 @@ Graphics
 - :doc:`code/jessyink2pdf` Converts JessyInk slides to
   PDF with librsvg.
 
-Those projects, and some others, can be found on the associated `Gitlab
-instance`_.
-
+`Gitlab instance`_
+  
 .. _Gitlab instance: https://git.atelo.org/u/etlapale
 
 .. toctree::
