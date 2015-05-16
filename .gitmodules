@@ -4,3 +4,6 @@
 [submodule "source/plstim"]
 	path = source/plstim
 	url = https://git.atelo.org/etlapale/plstim.git
+[submodule "source/wblanes"]
+	path = source/wblanes
+	url = https://git.atelo.org/etlapale/wblanes.git
