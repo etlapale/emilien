@@ -26,6 +26,7 @@ quantification of possibly overlapping bands.
 .. image:: images/wblanes-fit.png
    :scale: 30%
 
+:doc:`Documentation <wblanes/doc/source/index>` ·
 `Repository <https://git.atelo.org/etlapale/wblanes>`_
 	       
 Text processing
@@ -59,6 +60,7 @@ Graphics
 
    posts/auto-c++
    plstim/doc/source/index
+   wblanes/doc/source/index
    code/bibgen
    code/db2ooxml
    code/waf-ghc
