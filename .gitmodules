@@ -7,3 +7,6 @@
 [submodule "source/wblanes"]
 	path = source/wblanes
 	url = https://git.atelo.org/etlapale/wblanes.git
+[submodule "source/bibgen"]
+	path = source/bibgen
+	url = https://git.atelo.org/etlapale/bibgen.git

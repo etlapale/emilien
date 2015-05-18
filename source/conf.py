@@ -114,7 +114,8 @@ html_context = {'navbar_elements': [('index', 'Home', 'fa-home'),
                                     ('contact', 'Contact', 'fa-send'),
                                     ('search', 'Search', 'fa-search')],
                 'source_repository': 'https://git.atelo.org/etlapale/homepage/blob/master/source',
-                'other_repositories': {'plstim': 'https://git.atelo.org/etlapale/plstim/blob/develop',
+                'other_repositories': {'bibgen': 'https://git.atelo.org/etlapale/bibgen/blob/master',
+                                       'plstim': 'https://git.atelo.org/etlapale/plstim/blob/develop',
                                        'wblanes': 'https://git.atelo.org/etlapale/wblanes/blob/master'}}
 
 # the name for this set of Sphinx documents.  If None, it defaults to

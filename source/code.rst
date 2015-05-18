@@ -31,7 +31,7 @@ quantification of possibly overlapping bands.
 	       
 Text processing
 ---------------
-- :doc:`code/bibgen` A bibliography generator supporting several text
+- :doc:`bibgen/doc/source/index` A bibliography generator supporting several text
   document formats (including DocBook) and multiple biliography
   databases (such as BibTeX, JSON, or Mendeley).
 - :doc:`/code/db2ooxml` DocBook to Office OpenXML (Word 2007 .docx)
@@ -61,7 +61,7 @@ Graphics
    posts/auto-c++
    plstim/doc/source/index
    wblanes/doc/source/index
-   code/bibgen
+   bibgen/doc/source/index
    code/db2ooxml
    code/waf-ghc
    code/inksyntax
