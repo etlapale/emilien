@@ -24,10 +24,10 @@ A western blot image analyzer for
 quantification of possibly overlapping bands.
 
 .. image:: images/wblanes-fit.png
-   :scale: 30%
+   :scale: 33%
 
 :doc:`Documentation <wblanes/doc/source/index>` ·
-`Repository <https://git.atelo.org/etlapale/wblanes>`_
+`Repository <https://git.atelo.org/etlapale/wblanes>`__
 	       
 Text processing
 ---------------
@@ -46,11 +46,23 @@ Development
 
 Graphics
 --------
-- :doc:`code/inksyntax` A source code syntax highlighter
-  plugin for Inkscape.
+
+InkSyntax
+~~~~~~~~~
+
+A source code syntax highlighter plugin for Inkscape.
+
+.. image:: images/inksyntax.png
+   :scale: 33%
+
+:doc:`Documentation <inksyntax/doc/source/index>` ·
+`Repository <https://git.atelo.org/etlapale/inksyntax>`__
+     
 - :doc:`code/jessyink2pdf` Converts JessyInk slides to
   PDF with librsvg.
 
+
+  
 `Gitlab instance`_
   
 .. _Gitlab instance: https://git.atelo.org/u/etlapale
@@ -62,7 +74,7 @@ Graphics
    plstim/doc/source/index
    wblanes/doc/source/index
    bibgen/doc/source/index
+   inksyntax/doc/source/index
    code/db2ooxml
    code/waf-ghc
-   code/inksyntax
    code/jessyink2pdf

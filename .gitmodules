@@ -10,3 +10,6 @@
 [submodule "source/bibgen"]
 	path = source/bibgen
 	url = https://git.atelo.org/etlapale/bibgen.git
+[submodule "source/inksyntax"]
+	path = source/inksyntax
+	url = https://git.atelo.org/etlapale/inksyntax.git
