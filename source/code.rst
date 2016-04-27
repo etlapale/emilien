@@ -1,7 +1,7 @@
 Code
 ====
 
-My public projects are available on a `Gitlab instance`_, but some of them
+My public projects are available on a Github_, but some of them
 are also described here:
 
 Numerics
@@ -63,9 +63,9 @@ A source code syntax highlighter plugin for Inkscape.
 
 
   
-`Gitlab instance`_
+Github_
   
-.. _Gitlab instance: https://git.atelo.org/u/etlapale
+.. _Github: https://github.com/etlapale
 
 .. toctree::
    :hidden:
