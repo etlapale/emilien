@@ -113,11 +113,11 @@ html_context = {'navbar_elements': [('index', 'Home', 'fa-home'),
                                     ('code', 'Code', 'fa-terminal'),
                                     ('contact', 'Contact', 'fa-send'),
                                     ('search', 'Search', 'fa-search')],
-                'source_repository': 'https://git.atelo.org/etlapale/homepage/blob/master/source',
-                'other_repositories': {'bibgen': 'https://git.atelo.org/etlapale/bibgen/blob/master',
-                                       'inksyntax': 'https://git.atelo.org/etlapale/inksyntax/blob/master',
-                                       'plstim': 'https://git.atelo.org/etlapale/plstim/blob/develop',
-                                       'wblanes': 'https://git.atelo.org/etlapale/wblanes/blob/master'}}
+                'source_repository': 'https://github.com/etlapale/emilien/blob/master/source',
+                'other_repositories': {'bibgen': 'https://github.com/etlapale/bibgen/blob/master',
+                                       'inksyntax': 'https://github.com/etlapale/inksyntax/blob/master',
+                                       'plstim': 'https://github.com/etlapale/plstim/blob/develop',
+                                       'wblanes': 'https://github.com/etlapale/wblanes/blob/master'}}
 
 # the name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

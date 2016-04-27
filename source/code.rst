@@ -1,7 +1,7 @@
 Code
 ====
 
-My public projects are available on a Github_, but some of them
+My public projects are available on Github_, but some of them
 are also described here:
 
 Numerics
