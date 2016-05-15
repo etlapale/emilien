@@ -1,0 +1,6 @@
+VSS 2016
+========
+:Date: 2016-05-15
+
+You can `download a copy </data/posters/2016-vss-tlapale.pdf>`_ of the poster
+presented at `VSS 2016 <http://www.visionsciences.org/>`_.
